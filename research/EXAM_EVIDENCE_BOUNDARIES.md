@@ -51,6 +51,16 @@ Selected article comparisons:
 - No algorithmic superiority over a careful expert source-checklist.
 - No peer review, journal acceptance or proof of a novel general provenance theory.
 
+## Research materials and reproducibility
+
+- [Transparent methodology and codebook](METHODOLOGY.md)
+- [12 diagnostic claim comparisons](data/diagnostic_claims_12.csv)
+- [10-slot retrospective outlet/event grid](data/outlet_event_grid_10.csv)
+- [Dependency-free structural verifier](verify_corpus.py) — run `python research/verify_corpus.py` from the repository root.
+- **Complete 10-page report:** maintained as a separate author-review PDF pending personal source sign-off; not yet added to this public repository.
+
+The verifier checks structure and declared code distributions only; it does not independently establish the article claims as true. These files are **research working materials**, not accepted peer-reviewed publication artifacts.
+
 ## Use and next steps
 
 This synopsis is a readable research-project overview, not a substitute for the complete report and source-audit tables. For publication-level replication, freeze a prespecified source-selection frame, archive primary and secondary pages, provide an independently checked codebook and evaluate a strong standards-based baseline.

@@ -1,7 +1,7 @@
 # Methods: Evidence Boundaries in Public Examination Reporting
 
 ## Study design
-Exploratory, **AI-assisted single-workflow** documentary case analysis. This project compares explicit public-article claims with the particular official examination notice they invoke. It is **not** a representative media survey, an independent audit of completed government outcomes, or an evaluation of a trained fact-checking model.
+Exploratory, **author-led and AI-assisted single-workflow** documentary case analysis. The student claims responsibility for the original project direction, overarching research framing, and final scholarly decisions. Generative AI assisted with source discovery, source-to-claim comparison, provisional classification, analytical suggestions, drafting and presentation; the resulting claim codes were not independently second-coded by a human. This project compares explicit public-article claims with the particular official examination notice they invoke. It is **not** a representative media survey, an independent audit of completed government outcomes, or an evaluation of a trained fact-checking model.
 
 ## Source-to-claim fields
 For each claim, record: (1) examination/programme/year and issuing authority, (2) reported object (table, list, submitted bank details, completed refund, scheduled resit), (3) population/denominator and process stage, (4) publication date and reference period, and (5) the exact proposition supported, denied or left unestablished by the official notice.

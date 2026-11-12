@@ -43,4 +43,4 @@ Python, data analysis, API development, graph-based modelling, testing, source v
 
 For project questions, please use the issue tracker on the relevant public repository. Do not share sensitive personal data, credentials or unpublished records in public issues.
 
-> **Portfolio note:** Code and documentation may involve AI-assisted research or writing. Only personally reviewed work and verifiable outcomes should be represented as individual achievements in a CV or application.
+> **Authorship and tools:** These are student-led projects. For *Evidence Boundaries*, the student identifies the research direction, overall framing, and responsibility for final claims as their own. Generative AI assisted with source discovery and comparison, provisional coding, drafting, citation checks, and document preparation. AI was neither a co-author nor an independent research validator. See the [project-specific authorship statement](research/EXAM_EVIDENCE_BOUNDARIES.md#authorship-and-ai-assistance). Individual contributions should be presented only to the extent the student can personally substantiate.

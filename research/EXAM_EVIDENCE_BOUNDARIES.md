@@ -10,7 +10,15 @@ In selected public reports, when are numerical corrections or process-stage anno
 
 The study compares official Indian public-examination notices with selected secondary reports, keeping four things separate: **the source**, **the object measured or changed**, **the process stage**, and **what the evidence actually warrants**.
 
-This is a **purposive, AI-assisted, single-workflow documentary analysis**, not a statistically representative media survey. It uses a 12-item diagnostic comparison set and a separate 10-slot retrospective outlet/event lookup grid. The collections overlap and **must not be pooled** to estimate reporting error rates.
+This is an **author-led, AI-assisted, single-workflow documentary analysis** based on purposively selected sources, not a statistically representative media survey. It uses a 12-item diagnostic comparison set and a separate 10-slot retrospective outlet/event lookup grid. The collections overlap and **must not be pooled** to estimate reporting error rates.
+
+## Authorship and AI assistance
+
+**Student-author responsibility:** The student describes the project idea and direction, choice to pursue this evidence-boundaries question, overall framing, and responsibility for its final interpretation and presentation as their own. The student is the project author; AI tools are not listed as co-authors.
+
+**AI-assisted work:** Generative AI materially assisted with finding and comparing public sources, proposing initial article-to-notice classifications, interpreting evidence boundaries, organising the diagnostic grids, drafting and refining prose, bibliography checks, and formatting. These contributions are disclosed rather than portrayed as independently human-executed analysis.
+
+**Validation boundary:** This project has not received independent human second-coding or external validation. The student should personally verify all focal notices and contested article claims, examine the coding tables, and accept responsibility for final statements before representing the study as author-verified. This declaration concerns project ownership and direction; it does not claim that every analysis step was done without AI.
 
 ## Three contrasting cases
 

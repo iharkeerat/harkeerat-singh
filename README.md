@@ -16,9 +16,9 @@ Exploratory adaptive-assessment software with question delivery, response loggin
 
 - **Research question:** What can response-level signals support in a learning system, and where does interpretation go beyond the evidence?
 - **Project status:** inspectable source code; no validated cognitive diagnoses or student learning-effectiveness study.
-- **Explore:** [repository](https://github.com/iharkeerat/mprint-cognitive-engine) · [research scope](https://github.com/iharkeerat/mprint-cognitive-engine/blob/main/docs/RESEARCH_SCOPE.md) *(available after documentation PR is merged)*.
+- **Explore:** [repository](https://github.com/iharkeerat/mprint-cognitive-engine) · [documentation revision under review](https://github.com/iharkeerat/mprint-cognitive-engine/pull/1).
 
-### [Evidence Boundaries in Public Examination Reporting](research/EXAM_EVIDENCE_BOUNDARIES.md)
+### [Evidence Boundaries in Public Examination Reporting](https://github.com/iharkeerat/evidence-boundaries-research)
 
 **Documentary methods · Public administration · Source-to-claim analysis**
 
@@ -26,7 +26,7 @@ An exploratory comparison of official SSC, NEET-UG and CUET-UG notices with sele
 
 - **Question:** When does a corrected figure or announced process become an unsupported assertion about a changed result?
 - **Project status:** working research report; selected, nonrepresentative documentary cases; no claim of journal acceptance or representative error rates.
-- **Explore:** [source-backed research synopsis](research/EXAM_EVIDENCE_BOUNDARIES.md).
+- **Explore:** [standalone research repository](https://github.com/iharkeerat/evidence-boundaries-research) · [full research overview](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/paper/RESEARCH_OVERVIEW.md).
 
 ## Research and engineering principles
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">MAQAM-AI multilingual music intelligence visual</title>
+  <desc id="desc">Waveforms, raag and taal nodes with multilingual text.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e0d09"/><stop offset="1" stop-color="#09070d"/></linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb238"/><stop offset="1" stop-color="#ff4f74"/></linearGradient>
+    <linearGradient id="aqua" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#35ffd2"/><stop offset="1" stop-color="#2e7cff"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="36" fill="url(#bg)"/>
+  <circle cx="240" cy="220" r="240" fill="#ff8f38" opacity=".12"/>
+  <circle cx="1000" cy="650" r="260" fill="#2e7cff" opacity=".12"/>
+  <g transform="translate(70 76)">
+    <text x="0" y="0" fill="#9ca1aa" font-family="Arial" font-size="15" letter-spacing="4">MULTILINGUAL COMPUTATIONAL MUSICOLOGY</text>
+    <text x="0" y="82" fill="#fff" font-family="Georgia" font-size="72" font-weight="700">Poetry → Raag → Taal</text>
+    <text x="0" y="128" fill="#ffb238" font-family="Georgia" font-size="34" font-style="italic">meaning, mood and musical grammar.</text>
+  </g>
+  <g transform="translate(72 252)">
+    <rect width="560" height="390" rx="30" fill="#12131a" stroke="#2a2c35"/>
+    <text x="34" y="48" fill="#777e8a" font-family="Arial" font-size="13" letter-spacing="3">INPUT VERSE</text>
+    <text x="34" y="105" fill="#fff" font-family="Georgia" font-size="34">“दिल की आवाज़ को”</text>
+    <text x="34" y="150" fill="#fff" font-family="Georgia" font-size="34">“ਸੁਰਾਂ ਵਿੱਚ ਰੱਖ ਦਿਓ”</text>
+    <text x="34" y="195" fill="#fff" font-family="Georgia" font-size="34">“دل سے کہہ دو”</text>
+    <path d="M34 278 C60 210 84 350 112 270 S166 196 196 284 S256 348 286 268 S348 192 378 286 S438 352 526 250" fill="none" stroke="url(#sun)" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(34 322)" font-family="Arial" font-size="13">
+      <rect width="142" height="42" rx="21" fill="#282119"/><text x="71" y="26" text-anchor="middle" fill="#ffbd52">longing</text>
+      <rect x="154" width="142" height="42" rx="21" fill="#172624"/><text x="225" y="26" text-anchor="middle" fill="#4effd2">devotion</text>
+      <rect x="308" width="142" height="42" rx="21" fill="#201a2c"/><text x="379" y="26" text-anchor="middle" fill="#a989ff">introspective</text>
+    </g>
+  </g>
+  <g transform="translate(690 230)">
+    <g transform="translate(170 160)">
+      <circle r="122" fill="#14161e" stroke="#303440" stroke-width="2"/>
+      <circle r="82" fill="#0d0f14" stroke="#ff9d36" stroke-width="3"/>
+      <circle r="38" fill="url(#sun)"/>
+      <text x="0" y="-6" text-anchor="middle" fill="#111" font-family="Arial" font-size="14" font-weight="700">RAAG</text>
+      <text x="0" y="15" text-anchor="middle" fill="#111" font-family="Arial" font-size="17" font-weight="800">YAMAN</text>
+      <g fill="#12141b" stroke="#414653">
+        <circle cx="0" cy="-154" r="38"/><circle cx="145" cy="-52" r="38"/><circle cx="90" cy="125" r="38"/><circle cx="-90" cy="125" r="38"/><circle cx="-145" cy="-52" r="38"/>
+      </g>
+      <g fill="#fff" font-family="Arial" font-size="13" text-anchor="middle"><text x="0" y="-149">Tivra</text><text x="145" y="-47">Evening</text><text x="90" y="130">Shanta</text><text x="-90" y="130">Teentaal</text><text x="-145" y="-47">Kalyan</text></g>
+      <g stroke="url(#aqua)" stroke-width="2" opacity=".65"><path d="M0-82V-116"/><path d="M75-27L110-40"/><path d="M48 66L68 93"/><path d="M-48 66L-68 93"/><path d="M-75-27L-110-40"/></g>
+    </g>
+    <rect x="0" y="355" width="340" height="134" rx="24" fill="#12141b" stroke="#2a2f38"/>
+    <text x="24" y="391" fill="#777e8a" font-family="Arial" font-size="12" letter-spacing="3">DUAL-HEAD OUTPUT</text>
+    <text x="24" y="428" fill="#fff" font-family="Arial" font-size="18" font-weight="700">Rasa regression</text>
+    <rect x="190" y="412" width="118" height="8" rx="4" fill="#272b35"/><rect x="190" y="412" width="91" height="8" rx="4" fill="#ff9d36"/>
+    <text x="24" y="467" fill="#fff" font-family="Arial" font-size="18" font-weight="700">Meaning classification</text>
+    <rect x="238" y="451" width="70" height="8" rx="4" fill="#272b35"/><rect x="238" y="451" width="58" height="8" rx="4" fill="#35ffd2"/>
+  </g>
+</svg>

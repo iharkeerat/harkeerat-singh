@@ -1,92 +1,398 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0a1115">
-<meta name="description" content="Research portfolio of Harkeerat Singh: artificial intelligence, computational research, public policy, learning science and interdisciplinary inquiry.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Harkeerat Singh — Research & Interdisciplinary Work">
-<meta property="og:description" content="Exploring the boundary between evidence, intelligence and institutions. Research projects in AI, education and public policy.">
-<title>Harkeerat Singh — Research Portfolio</title>
-<style>
-:root{color-scheme:dark;--bg:#0a1115;--surface:#101c20;--surface2:#142328;--ink:#f4f1e8;--muted:#9aa9a8;--line:#2a3a3c;--accent:#c9f18e;--warm:#e5cba7;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}body::before{position:fixed;inset:0;z-index:-1;pointer-events:none;content:"";background:radial-gradient(ellipse at 84% 3%,#1b393b55,transparent 44%),radial-gradient(ellipse at 5% 90%,#172d2855,transparent 33%)}
-a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button,input{font:inherit}::selection{background:#bbdf8b;color:#101a19}.wrap{width:min(var(--max),calc(100% - 56px));margin-inline:auto}
-.skip{position:absolute;top:-100px;left:12px;background:var(--accent);color:#08130e;padding:10px;z-index:11}.skip:focus{top:10px}
-header{position:sticky;z-index:10;top:0;border-bottom:1px solid #ffffff1c;background:#0a1115ed;backdrop-filter:blur(16px)}
-.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:750;letter-spacing:.04em;white-space:nowrap}.monogram{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--accent);border-radius:10px;color:var(--accent);font-family:Georgia,serif;font-size:16px}.navlinks{display:flex;gap:28px;align-items:center}.navlinks a{font-size:13px;color:#c1ccca;transition:color .2s}.navlinks a:hover,.subtle-link:hover{color:var(--accent)}.cta{border:1px solid #7caa78;color:var(--accent);padding:9px 17px;border-radius:100px;font-size:12px;font-weight:700;white-space:nowrap}.cta:hover{background:#c9f18e17}
-.eyebrow{font:700 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:46px;align-items:center;min-height:660px;padding:96px 0 98px;position:relative}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.35rem,6.2vw,6.8rem);line-height:1.035;letter-spacing:-.057em;font-weight:400;margin:18px 0 22px;max-width:900px}.hero h1 em{color:var(--accent);font-weight:400;font-style:italic}.hero p{max-width:650px;font-size:17px;color:#b0c0be;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid #9ac17b;border-radius:6px;background:var(--accent);color:#0b1915;font-size:13px;font-weight:800}.btn.secondary{background:transparent;color:var(--ink);border-color:#526563}.btn:hover{filter:brightness(1.08)}
-.hero-art{border:1px solid #325050;border-radius:22px;min-height:420px;display:grid;place-items:center;overflow:hidden;position:relative;background:radial-gradient(circle at center,#20483f77,transparent 53%),linear-gradient(145deg,#112525,#081115)}
-.hero-art:before,.hero-art:after{content:"";position:absolute;border-radius:50%;width:320px;height:320px;border:1px solid #8bb59e37}.hero-art:after{width:240px;height:240px;transform:rotate(26deg);border-style:dashed}
-.art-center{width:134px;height:134px;background:#182f2f;border-radius:50%;border:1px solid #b8de9b;display:grid;place-items:center;text-align:center;z-index:1;box-shadow:0 0 40px #a6e0a01a;font-family:Georgia,serif;font-size:23px;line-height:1.1}.orbit{position:absolute;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#c6dcbf;background:#0a1716;border:1px solid #42605a;padding:9px 13px;border-radius:100px;z-index:2}.orbit.one{top:18%;left:11%}.orbit.two{top:21%;right:7%}.orbit.three{bottom:19%;left:9%}.orbit.four{bottom:14%;right:10%}.art-caption{position:absolute;bottom:14px;left:17px;color:#708f89;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
-.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:0 0 80px}.metric{border-top:1px solid var(--line);padding:20px 0}.metric strong{font-family:Georgia,serif;font-size:29px;display:block;font-weight:400}.metric span{display:block;color:var(--muted);font-size:12px;line-height:1.5;margin-top:3px}
-.section{padding:94px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:31px}.section h2{font-family:Georgia,serif;font-size:clamp(2.5rem,4.3vw,4.6rem);font-weight:400;line-height:1.09;letter-spacing:-.045em;margin:11px 0}.section-intro{max-width:630px;color:var(--muted);margin:0;font-size:15px}.section-head>.micro{color:#819b93;font-size:12px;text-align:right;max-width:200px}
-.toolbar{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap;margin:25px 0 25px}.filters{display:flex;flex-wrap:wrap;gap:8px}.filter{background:none;border:1px solid #344b49;color:#acbfba;border-radius:100px;padding:8px 13px;font-size:12px;cursor:pointer}.filter[aria-pressed=true]{background:#caef99;color:#0b1a16;border-color:#caef99;font-weight:750}.search{background:#0d1719;border:1px solid #344b49;color:var(--ink);border-radius:7px;padding:9px 12px;width:220px;font-size:13px}.search::placeholder{color:#7f9792}
-.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.project{border:1px solid var(--line);border-radius:13px;min-height:266px;padding:24px;background:linear-gradient(155deg,#142225,#0c1619);display:flex;flex-direction:column;transition:border-color .2s,transform .2s}.project:hover{border-color:#89b390;transform:translateY(-2px)}.project-top{display:flex;justify-content:space-between;gap:8px;align-items:start}.number{font:12px/1.4 ui-monospace,monospace;color:#769c8a}.state{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--warm);background:#3c342c;padding:4px 7px;border-radius:3px;text-align:right}.project h3{font-family:Georgia,serif;font-size:26px;font-weight:400;letter-spacing:-.025em;line-height:1.16;margin:23px 0 10px}.project p{font-size:13px;color:#b4c2bf;line-height:1.62;margin:0 0 18px}.project-foot{margin-top:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.tag{font:10px/1.5 ui-monospace,monospace;letter-spacing:.02em;color:#a6c58e}.explore{margin-left:auto;font-weight:750;font-size:12px;color:var(--accent)}.empty{padding:28px;color:var(--muted)}
-.dossiers{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:18px}details{background:#101e20;border:1px solid var(--line);border-radius:10px;padding:0 20px;scroll-margin-top:92px}details[open]{background:#152526;border-color:#5b8172}summary{cursor:pointer;display:flex;align-items:center;gap:14px;padding:20px 0;list-style:none}summary::-webkit-details-marker{display:none}.dossier-index{font:11px ui-monospace,monospace;color:#82ac91}.dossier-title{font:21px Georgia,serif;flex:1}.plus{color:var(--accent);font-size:22px}details[open] .plus{transform:rotate(45deg)}.detail-body{border-top:1px solid var(--line);padding:4px 0 22px;color:#b3c4c0;font-size:13px}.detail-body h4{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:20px 0 3px}.detail-body p{margin:0 0 9px}.detail-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.detail-links a{border:1px solid #729c80;border-radius:5px;color:var(--accent);font-size:12px;padding:8px 11px}
-.writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.paper{padding:28px;border:1px solid var(--line);background:#0f1b1e;border-radius:12px}.paper small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}.paper h3{font-family:Georgia,serif;font-size:27px;line-height:1.2;font-weight:400;margin:13px 0}.paper p{font-size:14px;color:#a9beba;margin:0}.paper a{display:inline-block;color:var(--accent);font-size:12px;margin-top:14px}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.about-grid h3{font-family:Georgia,serif;font-size:29px;font-weight:400;margin:0 0 14px}.about-grid p{color:#acbfbc;font-size:14px}.timeline{border-left:1px solid #527466;padding-left:25px;margin-top:18px}.timeline article{padding:0 0 24px;position:relative}.timeline article:before{content:"";position:absolute;left:-31px;top:7px;width:10px;height:10px;background:#c9f18e;border-radius:50%}.timeline strong{display:block;font-size:14px}.timeline span{display:block;font-size:12px;color:var(--muted)}
-.principles{display:grid;gap:12px}.principle{padding:16px 19px;border:1px solid var(--line);border-radius:8px}.principle b{font:16px Georgia,serif}.principle p{margin:4px 0 0;font-size:13px}.contact{display:flex;align-items:end;justify-content:space-between;gap:25px}.contact h2{max-width:720px}.contact p{max-width:530px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:28px 0 45px;color:var(--muted);font-size:12px}.footer-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#d7e5d9}.note{font-size:11px;color:#7d9d93;margin-top:22px}
-@media(max-width:930px){.hero{grid-template-columns:1fr;min-height:0;gap:28px;padding:78px 0 60px}.hero-art{min-height:320px}.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{gap:14px}.metrics{padding-bottom:60px}.about-grid{gap:24px}}
-@media(max-width:620px){.wrap{width:calc(100% - 36px)}.nav{height:62px}.navlinks{display:none}.brand{font-size:13px}.hero{padding:62px 0 48px}.hero h1{font-size:clamp(3rem,12vw,4.5rem)}.hero p{font-size:15px}.hero-art{min-height:280px}.metrics{gap:9px}.metric strong{font-size:25px}.metric span{font-size:11px}.section{padding:65px 0}.section-head{display:block}.section-head>.micro{display:none}.project-grid,.dossiers,.writing-grid,.about-grid{grid-template-columns:1fr}.project{min-height:230px}.search{width:100%}.contact{display:block}.hero-art:before{width:240px;height:240px}.hero-art:after{width:170px;height:170px}.art-center{width:105px;height:105px;font-size:19px}.orbit{font-size:8px;padding:7px 8px}.orbit.one{left:3%}.orbit.two{right:3%}.orbit.three{left:3%}.orbit.four{right:3%}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#070809" name="theme-color"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="Harkeerat Singh is an undergraduate researcher exploring causal AI, evidence integrity, public-examination reform, learning systems, computational music and human-AI interaction. Explore research case studies and methods." name="description"/>
+<meta content="Harkeerat Singh — Research, systems &amp; evidence" property="og:title"/>
+<meta content="From causal AI to public-examination reform: evidence-led, interdisciplinary research." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="assets/images/og-card.png" property="og:image"/>
+<link href="assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="styles.css" rel="stylesheet"/>
+<title>Harkeerat Singh — Research at the intersection of AI and public systems</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Harkeerat Singh","description":"Undergraduate researcher studying trustworthy computational and public systems","affiliation":[{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Jodhpur"},{"@type":"CollegeOrUniversity","name":"Panjab University"}],"sameAs":["https://github.com/iharkeerat","https://www.linkedin.com/in/harkeeratsingh01/"],"knowsAbout":["Reinforcement Learning","Causal attribution","Public examination policy","Reproducible research","Indic computational music","Learning technologies"]}</script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="#home"><span class="monogram" aria-hidden="true">HS</span> HARKEERAT SINGH <span style="color:#648074;font-weight:400">/ RESEARCH</span></a><div class="navlinks"><a href="#projects">Projects</a><a href="#case-studies">Research notes</a><a href="#writing">Writing</a><a href="#about">Background</a></div><a href="#contact" class="cta">Get in touch ↗</a></nav></header>
+<div aria-hidden="true" class="page-progress"><span></span></div>
+<div aria-hidden="true" class="grain"></div>
+<div aria-hidden="true" class="cursor-dot"></div>
+<div aria-hidden="true" class="cursor-ring"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" data-header="">
+<a aria-label="Harkeerat Singh, home" class="brand magnetic" href="#top">
+<span aria-hidden="true" class="brand-mark"><i></i><i></i></span>
+<span class="brand-copy"><strong>Harkeerat</strong><small>AI · Society · Evidence</small></span>
+</a>
+<nav aria-label="Primary navigation" class="desktop-nav">
+<a href="#work">Projects</a><a href="#additional">More work</a>
+<a href="#research">Methods</a>
+<a href="#experience">Experience</a>
+<a href="#about">About</a>
+</nav>
+<div class="header-actions">
+<span class="availability"><i></i> Research collaborations</span>
+<button aria-label="Open quick navigation" class="command-trigger magnetic" data-command-open="" type="button">⌘ K</button>
+<button aria-expanded="false" aria-label="Open menu" class="menu-trigger" data-menu-trigger="" type="button">
+<span></span><span></span>
+</button>
+</div>
+<div class="mobile-menu" data-mobile-menu="">
+<nav aria-label="Mobile navigation">
+<a href="#additional">Additional work <span>04</span></a><a href="#work">Selected work <span>01</span></a>
+<a href="#research">Research system <span>02</span></a>
+<a href="#experience">Experience <span>03</span></a>
+<a href="#about">About <span>04</span></a>
+<a href="#contact">Contact <span>05</span></a>
+</nav>
+</div>
+</header>
 <main id="main">
-<section id="home" class="wrap hero" aria-labelledby="hero-heading">
-<div><div class="eyebrow">Independent inquiry · AI × Human systems × Public policy</div><h1 id="hero-heading">Questioning the <em>systems</em> we trust.</h1><p>I'm Harkeerat Singh, an undergraduate researcher studying the intersection of artificial intelligence, evidence, learning, institutions and public life. My work asks a simple but demanding question: <strong style="color:#e4e8da">what can we actually justify from the evidence we have?</strong></p><div class="actions"><a class="btn" href="#projects">Explore research ↗</a><a class="btn secondary" href="https://github.com/iharkeerat" target="_blank" rel="noopener noreferrer">GitHub profile</a></div><p class="note">BS Applied AI & Data Science · IIT Jodhpur &nbsp; / &nbsp; BCA · Panjab University</p></div>
-<div class="hero-art" role="img" aria-label="Conceptual diagram connecting evidence, inference, institutions and human impact"><span class="orbit one">Evidence</span><span class="orbit two">Inference</span><span class="orbit three">Institutions</span><span class="orbit four">Human impact</span><div class="art-center">Inquiry<br>before<br>certainty</div><span class="art-caption">A working research philosophy, not an algorithm</span></div>
+<section class="hero" data-section="" id="top">
+<canvas aria-hidden="true" class="hero-canvas" id="constellation"></canvas>
+<div aria-hidden="true" class="hero-grid"></div>
+<div aria-hidden="true" class="orb orb-a" data-depth="0.08"></div>
+<div aria-hidden="true" class="orb orb-b" data-depth="0.15"></div>
+<div class="hero-copy">
+<div class="eyebrow reveal-up"><span>01</span> Independent undergraduate research · India</div>
+<h1 aria-label="I build evidence-led systems" class="hero-title">
+<span class="title-line" data-split="">I build</span>
+<span class="title-line accent-serif" data-split="">evidence-led</span>
+<span class="title-line title-indent" data-split="">systems.</span>
+</h1>
+<p class="hero-lead reveal-up">From <strong>causal AI and learning technologies</strong> to public-examination reform, I study how a system can make claims people can <strong>inspect, contest and trust.</strong></p>
+<div class="hero-actions reveal-up">
+<a class="button button-primary magnetic" href="#work"><span>Explore the research</span><b>↘</b></a>
+<a class="button button-ghost magnetic" href="assets/docs/Harkeerat_Singh_Research_CV_2026.pdf" rel="noopener" target="_blank"><span>Open résumé</span><b>↗</b></a>
+</div>
+</div>
+<div aria-label="Interactive three-dimensional research system visual" class="hero-scene">
+<div aria-hidden="true" class="scene-shadow"></div>
+<div aria-hidden="true" class="data-cube" data-depth="0.18" data-tilt="">
+<div class="cube-face face-front"><span>AI</span><small>models</small></div>
+<div class="cube-face face-back"><span>DATA</span><small>evidence</small></div>
+<div class="cube-face face-right"><span>HAI</span><small>people</small></div>
+<div class="cube-face face-left"><span>POL</span><small>policy</small></div>
+<div class="cube-face face-top"><span>STAT</span><small>uncertainty</small></div>
+<div class="cube-face face-bottom"><span>SYS</span><small>systems</small></div>
+</div>
+<article class="floating-card card-model" data-depth="0.28" data-tilt="">
+<span class="card-kicker">Current signal</span>
+<strong>Research × Engineering</strong>
+<div class="mini-bars"><i style="--v:78%"></i><i style="--v:92%"></i><i style="--v:67%"></i><i style="--v:86%"></i></div>
+</article>
+<article class="floating-card card-proof" data-depth="0.12" data-tilt="">
+<span class="card-kicker">Design rule</span>
+<strong>Show the evidence.</strong>
+<small>Not just the label.</small>
+</article>
+<article class="floating-card card-trace" data-depth="0.34" data-tilt="">
+<span class="trace-dot"></span>
+<div><strong>Auditable trace</strong><small>selection → estimate → route</small></div>
+</article>
+<div aria-hidden="true" class="orbit orbit-one"><i></i></div>
+<div aria-hidden="true" class="orbit orbit-two"><i></i></div>
+</div>
+<div class="hero-meta reveal-up">
+<div><span>Focus</span><strong>AI reliability · Learning · Public institutions</strong></div>
+<div><span>Methods</span><strong>Experiments · Formal reasoning · Policy analysis</strong></div>
+<div><span>Principle</span><strong>A claim should never outrun its evidence</strong></div>
+</div>
+<a aria-label="Scroll to introduction" class="scroll-cue" href="#premise"><span></span>Scroll to inspect</a>
 </section>
-<div class="wrap metrics" aria-label="Selected research context"><div class="metric"><strong>3</strong><span>Public, inspectable project or research repositories linked below</span></div><div class="metric"><strong>392,832</strong><span>Bounded GridWorld comparison count in an audited research artifact</span></div><div class="metric"><strong>800+</strong><span>Pages in PEXORA's citizen-authored legislative and policy framework</span></div></div>
-<section id="projects" class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Selected work</div><h2>Research and projects</h2><p class="section-intro">A portfolio spanning experimental AI, educational technologies, institutional reform and computational humanities. Projects are identified as prototypes, working studies or proposals—not inflated into deployments or accepted publications.</p></div><div class="micro">Choose a project to read its research note and follow available public evidence.</div></div><div class="toolbar"><div class="filters" role="group" aria-label="Filter projects"><button class="filter" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="ai" aria-pressed="false">AI & computation</button><button class="filter" data-filter="policy" aria-pressed="false">Policy & governance</button><button class="filter" data-filter="humanities" aria-pressed="false">Humanities & education</button></div><input id="project-search" class="search" type="search" autocomplete="off" placeholder="Search research…" aria-label="Search projects"></div><div class="project-grid" id="project-grid"></div><p class="note" id="project-count" aria-live="polite"></p></div></section>
-<section id="case-studies" class="section"><div class="wrap"><div class="eyebrow">02 / Research notes</div><h2>Questions, methods, limits.</h2><p class="section-intro">Each note makes the distinction between the research idea, implemented or drafted work, and what has not yet been independently established.</p><div id="dossiers" class="dossiers"></div></div></section>
-<section id="writing" class="section"><div class="wrap"><div class="eyebrow">03 / Academic writing</div><h2>Manuscripts & essays</h2><div class="writing-grid"><article class="paper"><small>Submitted manuscript · Not published</small><h3>The Identity Tax: Why High-Accuracy AI Is Failing Rural India</h3><p>An interdisciplinary article examining dialect adaptation in automatic speech recognition and proposing a Linguistic Convergence Cost Index (LCC-I). Submitted for editorial consideration; no acceptance or peer-review claim is made.</p></article><article class="paper"><small>Work in progress · Film & psychology</small><h3>A Critical Analysis of <em>Kali Jotta</em></h3><p>Developing an analysis of the film's social and psychological themes, situated within broader interests in narrative, mental health, and the social impact of institutions.</p></article><article class="paper"><small>Public working report · 2026</small><h3>Evidence Boundaries in Public Examination Reporting</h3><p>Documentary comparisons ask when reporting moves beyond what a notice actually establishes. Limited, purposive cases—not a representative survey.</p><a href="https://github.com/iharkeerat/harkeerat-singh/blob/main/research/EXAM_EVIDENCE_BOUNDARIES.md" target="_blank" rel="noopener noreferrer">Read the working report ↗</a></article><article class="paper"><small>Citizen-authored draft · 2026</small><h3>PEXORA: Public Examinations, Accountability and Candidate Rights</h3><p>A proposed legislative and operational framework for trustworthy public examinations. Submission and administrative forwarding do not imply endorsement or enactment.</p><a href="#pexora" data-open="pexora">Read the project note ↗</a></article></div></div></section>
-<section id="about" class="section"><div class="wrap"><div class="eyebrow">04 / Background</div><h2>Crossing disciplinary lines.</h2><div class="about-grid"><div><h3>Education & perspective</h3><div class="timeline"><article><strong>BS in Applied Artificial Intelligence & Data Science</strong><span>Indian Institute of Technology Jodhpur · Ongoing</span></article><article><strong>Bachelor of Computer Applications</strong><span>S.C.D. Government College · Panjab University · Ongoing</span></article><article><strong>Senior Secondary · 97.2%</strong><span>Nankana Sahib Public School · CBSE, 2025 · Applied Mathematics, Political Science, Informatics Practices, languages and classical music</span></article></div><h3 style="margin-top:12px">Selected experience</h3><p>Public Policy & Consulting Intern (PPGF, ongoing); Applied AI Research Intern (CSRBOX, Dec 2025–Jan 2026); Graphic Design Intern (Nankana Sahib Public School, Oct 2023–Jun 2024); volunteer academic mentor.</p><p>Former student council president; district inter-school quiz champion (2023). Additional academic training includes digital storytelling, mathematical foundations of machine learning, and design thinking.</p></div><div><h3>How I approach evidence</h3><div class="principles"><div class="principle"><b>Bound the claim.</b><p>A result within a controlled environment does not automatically generalize to the wider world.</p></div><div class="principle"><b>Make failure inspectable.</b><p>Document assumptions, unresolved questions and negative findings—not only the successful demonstration.</p></div><div class="principle"><b>Connect method to people.</b><p>Social consequences, candidate rights, accessibility and governance should be part of the technical conversation.</p></div><div class="principle"><b>Think across fields.</b><p>AI meets statistics, educational psychology, music, political science, design and public administration.</p></div></div></div></div></div></section>
-<section id="contact" class="section"><div class="wrap contact"><div><div class="eyebrow">05 / Collaboration & correspondence</div><h2>Open to thoughtful research conversations.</h2><p>For critique, interdisciplinary collaborations and project questions, follow the public repositories or reach out using professional contact channels.</p></div><div class="actions"><a class="btn" href="mailto:harkeerat3211@gmail.com">Email me ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/harkeeratsingh01/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></section>
-</main><footer><div class="wrap footer-flex"><span>© 2026 Harkeerat Singh · Independent research portfolio</span><span><a href="https://github.com/iharkeerat" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="#home">Back to top ↑</a></span></div><div class="wrap note">Research integrity notice: working prototypes and citizen proposals are not peer-reviewed publications, validated clinical assessments, commercial deployments or government-adopted reforms.</div></footer>
-<script>
-(function(){
-"use strict";
-var projects=[
-{id:"reality-attribution",name:"Reality Attribution",category:"ai",status:"Research in progress",desc:"Can an agent distinguish environmental change, observation failure and hidden intervention from limited evidence?",question:"When an agent observes surprising outcomes, which alternative explanations are distinguishable under a defined evidence contract?",method:"Causal ambiguity scenarios, finite GridWorld identifiability enumeration, audit hashes, integrity constraints and a separate LunarLander experimentation protocol.",evidence:"A verified archived GridWorld aggregation covers 392,832 bounded state/action/hypothesis/channel comparisons; a separate restored test tree passed 50 tests in a prior audit.",limits:"These are finite-domain findings. Full LunarLander population results, a canonical release and real-world generalization have not been established.",tags:["Reinforcement learning","Identifiability","Experimental design"]},
-{id:"pexora",name:"PEXORA",category:"policy",status:"Citizen-authored proposal",desc:"A proposed national architecture for fair, secure, scientifically assured and candidate-centred public examinations.",question:"How can public examination institutions separate operations, scientific assurance, rights protection, evidence custody and independent accountability?",method:"Constitutional and legislative drafting, institutional design, operational regulations, candidate rights, redress, cyber-security, psychometrics and implementation architecture.",evidence:"An 800+ page independently drafted framework with an executive legislative brief was submitted to public authorities in 2026; some representations were administratively forwarded.",limits:"A submission, receipt, forwarding or request for consideration is not government approval, sponsorship, endorsement or enacted policy.",tags:["Public policy","Legislative design","Candidate rights"]},
-{id:"maqam-ai",name:"MAQAM AI",category:"humanities",status:"Public research prototype",desc:"Explainable computational-musicology tools for symbolic music, formal alignment and Raag/Taal knowledge.",question:"Can symbolic notation and formal constraints support inspectable syllable-to-note alignment without overstating musical validity?",method:"MuseScore parsing, conservative event normalization, exact dynamic programming, API checks and constructed-fixture verification.",evidence:"A documented public prototype contains reproducible formal tests and a constructed-score smoke demonstration.",limits:"No independently established real-world singing-alignment accuracy or expert-validated musical recommendations.",repo:"https://github.com/iharkeerat/maqam-ai",tags:["Computational musicology","Dynamic programming","Explainability"]},
-{id:"mprint",name:"M-Print Cognitive Engine",category:"ai",status:"Public exploratory prototype",desc:"Adaptive assessment with behavioural signals, learning pathways and a concept dependency graph.",question:"What can observable response patterns tell an adaptive learning system without turning heuristics into cognitive diagnoses?",method:"FastAPI application, response logging, prerequisite graphs, Neo4j, SQLite and structured AI feedback.",evidence:"Public source code and a described assessment workflow can be inspected.",limits:"Behavioural patterns are proxies; no clinical diagnosis, independent learning effectiveness trial or validated psychological assessment is claimed.",repo:"https://github.com/iharkeerat/mprint-cognitive-engine",tags:["Learning analytics","Human-AI interaction","Graph methods"]},
-{id:"evidence-boundaries",name:"Evidence Boundaries in Exam Reporting",category:"policy",status:"Public working report",desc:"What can official records support, and where does public reporting turn process steps into claimed outcomes?",question:"How do we distinguish a corrected number, an announced administrative step, and an independently established result?",method:"Purposive documentary comparison, transparent coding rules, a 12-item diagnostic set and a separate retrospective lookup grid.",evidence:"Public methodology, data tables and structural verification script; linked official notices and selected published reports.",limits:"Not a representative survey, not an independently adjudicated error rate, and not a causal study of reporting motives.",repo:"https://github.com/iharkeerat/harkeerat-singh/blob/main/research/EXAM_EVIDENCE_BOUNDARIES.md",tags:["Documentary research","Provenance","Public administration"]},
-{id:"manas-pu",name:"MANAS-PU",category:"policy",status:"Concept / research draft",desc:"Student-centred institutional design and academic governance at the university level.",question:"How might university decision-making be more transparent, accountable and responsive to students?",method:"Institutional process mapping, proposal drafting and comparison of administrative, educational and student-facing needs.",evidence:"Independent concept-stage research and planning materials.",limits:"No institutional adoption or measured implementation outcomes are claimed.",tags:["Higher education","Governance","Student voice"]},
-{id:"pu-evaluation",name:"PU Evaluation & Transparency Framework",category:"policy",status:"Independent proposal",desc:"Reforming marking standards, answer-script transparency and review pathways.",question:"How can evaluation systems make assessment decisions more interpretable, contestable and consistent?",method:"An independent 500+ page proposal combining marking guidance, procedural review, disclosure standards and possible pilot pathways.",evidence:"Long-form draft architecture described in the academic CV.",limits:"Draft policy material; no official approval, pilot evaluation or administrative implementation is claimed.",tags:["Assessment reform","Administrative design","Procedural fairness"]},
-{id:"cognitive-mirror",name:"Cognitive Mirror",category:"ai",status:"Exploratory concept",desc:"A human-centred reflection on learning interactions and the limits of inferred cognitive patterns.",question:"Can learning interactions support useful self-reflection without assuming they reveal the entire inner process?",method:"Concept development and early computational/visual approaches to interpreting observable interactions.",evidence:"Exploratory design work and working portfolio documentation.",limits:"Not a diagnostic instrument or a validated model of cognition.",tags:["Cognitive modelling","Interpretability","Education"]},
-{id:"scom",name:"Student Council Operations Manual",category:"policy",status:"Governance documentation",desc:"A structured approach to student leadership, accountability and handover.",question:"How can student-run institutions preserve procedures, responsibilities and institutional memory?",method:"Documentation of roles, procedures, operational checklists and leadership continuity.",evidence:"Portfolio case-study documentation informed by student governance experience.",limits:"A practical operations design, not a controlled study of governance outcomes.",tags:["Institutional memory","Leadership","Operations"]},
-{id:"c-question-bank",name:"C Programming Question Bank",category:"humanities",status:"Educational resource",desc:"Study and assessment resources designed to make foundational programming topics easier to navigate.",question:"How can questions and revision materials support transparent learning goals and self-assessment?",method:"Topic organisation, question design and student-friendly assessment structure.",evidence:"Portfolio resource documentation.",limits:"Educational material rather than a research-validated intervention.",tags:["Computing education","Assessment design","Learning"]},
-{id:"identity-tax",name:"The Identity Tax",category:"humanities",status:"Submitted manuscript",desc:"A study of the linguistic burden placed on speakers when speech AI performs unevenly across language varieties.",question:"What does speech-system quality miss if it measures only errors while users must adapt their language?",method:"Interdisciplinary argument and proposal of the Linguistic Convergence Cost Index (LCC-I), extending attention beyond word error rate.",evidence:"Research article submitted to an IIT Jodhpur journal for consideration in 2026.",limits:"Submitted does not mean accepted or published; the index requires further independent validation.",tags:["NLP","Language inclusion","AI fairness"]},
-{id:"kali-jotta",name:"Kali Jotta — Critical Study",category:"humanities",status:"Writing in progress",desc:"An interdisciplinary analysis of film, social conditions and psychological themes.",question:"How does cinematic narrative represent the relationship between social institutions and mental well-being?",method:"Close reading and critical analysis through psychological and social perspectives.",evidence:"Manuscript in development.",limits:"An ongoing interpretive work, not a completed peer-reviewed study.",tags:["Film studies","Psychology","Social analysis"]}
-];
-function esc(x){return String(x).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
-function link(p){return p.repo?'<a href="'+esc(p.repo)+'" target="_blank" rel="noopener noreferrer">Public research / code ↗</a>':''}
-function renderDetails(){
-document.getElementById("dossiers").innerHTML=projects.map(function(p,i){
-return '<details id="'+p.id+'"><summary><span class="dossier-index">'+String(i+1).padStart(2,"0")+'</span><span class="dossier-title">'+esc(p.name)+'</span><span class="plus" aria-hidden="true">+</span></summary><div class="detail-body"><h4>Research question</h4><p>'+esc(p.question)+'</p><h4>Approach</h4><p>'+esc(p.method)+'</p><h4>Available evidence</h4><p>'+esc(p.evidence)+'</p><h4>Limits / research status</h4><p>'+esc(p.limits)+'</p><div class="detail-links">'+link(p)+'</div></div></details>'
-}).join("")}
-var active="all",query="";
-function renderCards(){
-var filtered=projects.filter(function(p){return (active==="all"||p.category===active)&&((p.name+" "+p.desc+" "+p.tags.join(" ")).toLowerCase().indexOf(query)>-1)});
-document.getElementById("project-grid").innerHTML=filtered.map(function(p){
-var ix=projects.indexOf(p)+1;
-return '<article class="project"><div class="project-top"><span class="number">'+String(ix).padStart(2,"0")+' / 12</span><span class="state">'+esc(p.status)+'</span></div><h3>'+esc(p.name)+'</h3><p>'+esc(p.desc)+'</p><div class="project-foot"><span class="tag">'+esc(p.tags[0])+'</span><a class="explore" href="#'+p.id+'" data-open="'+p.id+'">Read note ↗</a></div></article>'
-}).join("");
-document.getElementById("project-count").textContent=filtered.length+" of "+projects.length+" projects shown";
-if(!filtered.length)document.getElementById("project-grid").innerHTML='<p class="empty">No matching projects. Try a different keyword or filter.</p>'
-}
-renderDetails();renderCards();
-document.querySelectorAll(".filter").forEach(function(b){b.addEventListener("click",function(){active=b.dataset.filter;document.querySelectorAll(".filter").forEach(function(x){x.setAttribute("aria-pressed",String(x===b))});renderCards()})});
-document.getElementById("project-search").addEventListener("input",function(e){query=e.target.value.toLowerCase().trim();renderCards()});
-document.addEventListener("click",function(e){var a=e.target.closest("a[data-open]");if(!a)return;var target=document.getElementById(a.dataset.open);if(target){target.open=true}});
-if(location.hash){var existing=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(existing&&existing.tagName==="DETAILS")existing.open=true}
-})();
-</script>
+<section class="premise section-pad" data-section="" id="premise">
+<div class="section-index">02 / THE RESEARCH ETHOS</div>
+<div class="premise-layout">
+<div class="premise-sticky">
+<p class="micro-label">The work behind the interface</p>
+<h2 class="display-heading reveal-lines">A question first.<br/><em>A claim only if earned.</em></h2>
+<p class="large-copy reveal-up">I use software, experiments, quantitative analysis and public-policy reasoning to make difficult systems more accountable to the evidence they actually possess.</p>
+</div>
+<div class="evidence-stack">
+<article class="evidence-card reveal-card" data-tilt="">
+<span>01 / Frame</span>
+<h3>Define what can actually be claimed.</h3>
+<p>Separate the research question, target construct, decision boundary and scientific limitations before touching a model.</p>
+</article>
+<article class="evidence-card reveal-card" data-tilt="">
+<span>02 / Test</span>
+<h3>Build baselines that can embarrass the idea.</h3>
+<p>Use ablations, negative cases, multi-seed studies, calibration and uncertainty instead of a single flattering metric.</p>
+</article>
+<article class="evidence-card reveal-card" data-tilt="">
+<span>03 / Translate</span>
+<h3>Expose the reasoning inside the product.</h3>
+<p>Surface evidence, confidence, provenance and next actions so the interface never overstates the model.</p>
+</article>
+<div class="metric-grid">
+<article><strong data-counter="16368">0</strong><span>verified GridWorld aggregate rows</span></article>
+<article><strong data-counter="50">0</strong><span>passing GridWorld tests in restored tree</span></article>
+<article><strong data-counter="870">0</strong><span>pages in PEXORA proposal document</span></article>
+<article><strong data-counter="3">0</strong><span>causal perturbation classes</span></article>
+</div>
+</div>
+</div>
+</section>
+<section class="projects-scroll" data-projects-scroll="" data-section="" id="work">
+<div class="projects-sticky">
+<div class="projects-heading">
+<div>
+<span class="section-index">03 / FEATURED RESEARCH</span>
+<h2>Five investigations.<br/><em>One standard of evidence.</em></h2>
+</div>
+<div aria-hidden="true" class="projects-progress"><span></span></div>
+<p>Scroll to explore each research question. Individual case studies document methods and limits.</p>
+</div>
+<div class="project-track" data-project-track="">
+<article class="project-panel project-violet">
+<div class="project-copy">
+<span class="project-number">01 / RESEARCH</span>
+<div class="project-tags"><span>Reinforcement learning</span><span>Active probing</span><span>Ablations</span></div>
+<h3>Reality Attribution</h3>
+<p class="project-question">Can an agent distinguish a changed world from delayed memory or hidden intervention?</p>
+<p class="project-summary">A finite-domain GridWorld attribution study and exploratory LunarLander protocol investigating whether diagnostic actions can distinguish environmental change, stale observations and hidden intervention.</p>
+<div class="project-metrics">
+<div><strong>16,368</strong><span>aggregate rows</span></div>
+<div><strong>50/50</strong><span>GridWorld tests</span></div>
+<div><strong>Pilot</strong><span>LunarLander</span></div>
+</div>
+<a class="text-link magnetic" href="case-studies/reality-attribution.html">Read the case study <b>↗</b></a>
+</div>
+<div class="project-visual visual-art" data-tilt="">
+<img alt="Reality Attribution experiment visual" loading="lazy" src="assets/images/reality-attribution.svg"/>
+</div>
+</article><article class="project-panel project-aqua project-pexora">
+<div class="project-copy">
+<span class="project-number">02 / PUBLIC SYSTEMS</span>
+<div class="project-tags"><span>Public policy</span><span>Psychometrics</span><span>Institutional design</span></div>
+<h3>PEXORA</h3>
+<p class="project-question">What would it take for a public examination to be secure, scientifically defensible and genuinely fair to candidates?</p>
+<p class="project-summary">A citizen-authored constitutional, legislative and operational reform architecture spanning exam integrity, independent assurance, accessibility, evidence preservation and remedies.</p>
+<div class="project-metrics"><div><strong>870</strong><span>document pages</span></div><div><strong>2026</strong><span>submitted</span></div><div><strong>Draft</strong><span>not enacted</span></div></div>
+<a class="text-link magnetic" href="case-studies/pexora.html">Explore the policy case study <b>↗</b></a>
+</div>
+<div class="project-visual visual-art visual-pexora" data-tilt="">
+<img alt="PEXORA proposed examination architecture showing safeguards, independent assurance and candidate remedies" loading="lazy" src="assets/images/pexora-architecture.svg"/>
+</div>
+</article><article class="project-panel project-lime">
+<div class="project-copy">
+<span class="project-number">03 / EDUCATION AI</span>
+<div class="project-tags"><span>Adaptive AI</span><span>Bayesian evidence</span><span>Full-stack</span></div>
+<h3>M-Print</h3>
+<p class="project-question">How should an adaptive system decide what to ask next—and explain why?</p>
+<p class="project-summary">Adaptive assessment and learning-analytics research within the MANAS-PU vision: response-level evidence, prerequisite pathways and inspectable feedback; human validity remains unproven.</p>
+<div class="project-metrics">
+<div><strong>FastAPI</strong><span>backend</span></div>
+<div><strong>Neo4j</strong><span>graph routes</span></div>
+<div><strong>Prototype</strong><span>research stage</span></div>
+</div>
+<a class="text-link magnetic" href="case-studies/mprint.html">Read the case study <b>↗</b></a>
+</div>
+<div class="project-visual visual-browser" data-tilt="">
+<div class="browser-chrome"><i></i><i></i><i></i><span>m-print / evidence workspace</span></div>
+<img alt="M-Print adaptive assessment dashboard" loading="lazy" src="assets/images/mprint-dashboard.png"/>
+<div class="visual-float float-a"><span>θ</span><strong>posterior</strong></div>
+<div class="visual-float float-b"><strong>Why this item?</strong><small>inspectable utility</small></div>
+</div>
+</article><article class="project-panel project-orange">
+<div class="project-copy">
+<span class="project-number">04 / CULTURE × CODE</span>
+<div class="project-tags"><span>Indic NLP</span><span>Computational musicology</span><span>Dual-head model</span></div>
+<h3>MAQAM-AI</h3>
+<p class="project-question">Can multilingual poetry be mapped to musical mood without erasing cultural grammar?</p>
+<p class="project-summary">An interactive computational-musicology workbench with exact formal alignment, a conservative notation parser, and exploratory Raag/Taal and multilingual poetry resources.</p>
+<div class="project-metrics">
+<div><strong>Exact DP</strong><span>formal search</span></div>
+<div><strong>MuseScore</strong><span>score input</span></div>
+<div><strong>Prototype</strong><span>not validated</span></div>
+</div>
+<a class="text-link magnetic" href="case-studies/maqam-ai.html">Read the case study <b>↗</b></a>
+</div>
+<div class="project-visual visual-art" data-tilt="">
+<img alt="MAQAM-AI multilingual music intelligence visual" loading="lazy" src="assets/images/maqam-ai.svg"/>
+</div>
+</article><article class="project-panel project-pink">
+<div class="project-copy">
+<span class="project-number">05 / HUMAN–AI</span>
+<div class="project-tags"><span>Human-AI interaction</span><span>Benchmark design</span><span>Calibration</span></div>
+<h3>Cognitive Mirror</h3>
+<p class="project-question">When should an AI infer something about a person—and when is the evidence insufficient?</p>
+<p class="project-summary">A proposed psychology-grounded benchmark for evidence-supported mental-state inferences, hard negatives, human annotation, calibration and abstention; data collection is not complete.</p>
+<div class="project-metrics">
+<div><strong>30%+</strong><span>target negatives</span></div>
+<div><strong>3</strong><span>planned raters</span></div>
+<div><strong>Design</strong><span>not benchmarked</span></div>
+</div>
+<a class="text-link magnetic" href="case-studies/cognitive-mirror.html">Read the case study <b>↗</b></a>
+</div>
+<div class="project-visual visual-art" data-tilt="">
+<img alt="Cognitive Mirror evidence annotation visual" loading="lazy" src="assets/images/cognitive-mirror.svg"/>
+</div>
+</article></div>
+</div>
+</section><section class="additional-work section-pad" data-section="" id="additional">
+<div class="section-index">04 / ADDITIONAL WORK</div>
+<div class="additional-head"><h2 class="display-heading reveal-lines">Research is not<br/><em>one discipline.</em></h2><p class="large-copy">Supporting projects in education technology, documentary research, curriculum design and institutional governance. Each has a distinct scope and evidence status.</p></div>
+<div class="additional-grid">
+<a class="additional-card reveal-card" href="case-studies/manas-pu.html"><div class="additional-top"><span>01 / LEARNING SYSTEMS</span><span>Architecture · ongoing ↗</span></div><img alt="MANAS-PU academic ecosystem concept" loading="lazy" src="assets/images/manas-ecosystem.svg"/><div><h3>MANAS-PU</h3><p>A proposed student-centric system connecting learning analytics, graph-informed pathways, skill records and competency representation; M-Print is a research component.</p><div class="additional-tags">Flutter · FastAPI · Neo4j · Education</div></div></a>
+<a class="additional-card reveal-card" href="case-studies/evidence-boundaries.html"><div class="additional-top"><span>02 / DOCUMENTARY RESEARCH</span><span>Working report · public ↗</span></div><img alt="Documentary source-to-claim evidence comparison" loading="lazy" src="assets/images/evidence-boundaries.svg"/><div><h3>Evidence boundaries</h3><p>A source-to-claim audit of selected Indian examination notices and reports; distinguishes corrections, process stages and outcomes, without inferring a population error rate.</p><div class="additional-tags">Public records · Claim coding · Reproducibility</div></div></a>
+<a class="additional-card reveal-card" href="case-studies/c-question-bank.html"><div class="additional-top"><span>03 / LEARNING DESIGN</span><span>Authoring · ongoing ↗</span></div><img alt="Schematic study-guide and programming question cards" loading="lazy" src="assets/images/question-bank.svg"/><div><h3>PU C question bank</h3><p>A syllabus-aligned, bilingual programming learning resource with structured previous-year questions, worked explanations and revision maps.</p><div class="additional-tags">Computer science · Pedagogy · Editorial design</div></div></a>
+<a class="additional-card reveal-card" href="case-studies/scom.html"><div class="additional-top"><span>04 / GOVERNANCE DESIGN</span><span>Completed · 2025 ↗</span></div><img alt="Student council governance process map" loading="lazy" src="assets/images/scom.svg"/><div><h3>Student Council Operations Manual</h3><p>A documented governance framework with roles, onboarding, processes and accountability mechanisms for a school student council.</p><div class="additional-tags">Governance · Operations · Public leadership</div></div></a>
+</div>
+</section>
+<section class="evidence-ledger section-pad" data-section="" id="outputs">
+<div class="section-index">05 / OUTPUTS &amp; EVIDENCE</div>
+<div class="outputs-layout"><div><h2 class="display-heading reveal-lines">Show the work.<br/><em>Mark its limits.</em></h2><p class="large-copy">Projects here are independent research, prototypes, working reports or policy proposals—not peer-reviewed publications unless explicitly identified as such.</p></div>
+<div class="output-entries">
+<a href="https://github.com/iharkeerat/maqam-ai" rel="noopener noreferrer" target="_blank"><span>PUBLIC SOURCE · SOFTWARE PROTOTYPE</span><strong>MAQAM-AI: code, formal alignment lab &amp; evidence notes</strong><small>Formal solver behavior testable on constructed fixtures; independent musical accuracy unresolved. ↗</small></a>
+<a href="https://github.com/iharkeerat/mprint-cognitive-engine" rel="noopener noreferrer" target="_blank"><span>PUBLIC SOURCE · EDUCATION PROTOTYPE</span><strong>M-Print: inspectable cognitive-engine repository</strong><small>Engineering artifact; no validated psychometric or educational efficacy claim. ↗</small></a>
+<a href="https://github.com/iharkeerat/harkeerat-singh/blob/main/research/EXAM_EVIDENCE_BOUNDARIES.md" rel="noopener noreferrer" target="_blank"><span>PUBLIC WORKING REPORT · NOV 2026</span><strong>Evidence Boundaries in Public Examination Reporting</strong><small>Selected documentary comparison with a published method and corpus; nonrepresentative sample. ↗</small></a>
+<a href="case-studies/reality-attribution.html"><span>RESEARCH AUDIT · NOV 2026</span><strong>Reality Attribution: bounded GridWorld verification</strong><small>Verified table aggregation and restored-tree tests; LunarLander publication evidence pending. ↗</small></a>
+<a href="case-studies/pexora.html"><span>CITIZEN-AUTHORED POLICY PROPOSAL · 2026</span><strong>PEXORA: constitutional, legislative and operational architecture</strong><small>Government referrals documented; no official endorsement, enactment or validation. ↗</small></a>
+</div></div>
+</section>
+<section class="research-system section-pad" data-section="" id="research">
+<div class="section-index">06 / THE METHODS</div>
+<div class="research-heading">
+<h2 class="display-heading reveal-lines">From messy signals<br/>to <em>defensible conclusions.</em></h2>
+<p class="large-copy reveal-up">Different problems require different tools: finite-domain enumeration for causal ambiguity, formal solvers for symbolic music, and documentary analysis for institutional accountability.</p>
+</div>
+<div class="system-stage">
+<canvas aria-hidden="true" id="method-network"></canvas>
+<div class="system-core" data-tilt="">
+<span>Research loop</span>
+<strong>Question<br/>→ Evidence<br/>→ Decision</strong>
+</div>
+<button class="system-node node-stat" data-method="statistics" type="button"><strong>Statistics</strong><span>inference · diagnostics</span></button>
+<button class="system-node node-exp" data-method="experiments" type="button"><strong>Experiments</strong><span>baselines · ablations</span></button>
+<button class="system-node node-ml" data-method="ml" type="button"><strong>ML</strong><span>calibration · uncertainty</span></button>
+<button class="system-node node-data" data-method="data" type="button"><strong>Data</strong><span>validation · provenance</span></button>
+<button class="system-node node-product" data-method="product" type="button"><strong>Product</strong><span>human-readable evidence</span></button>
+<button class="system-node node-policy" data-method="policy" type="button"><strong>Society</strong><span>fairness · governance</span></button>
+<div aria-live="polite" class="method-detail" data-method-detail="">
+<span>Selected method</span>
+<strong>Statistics</strong>
+<p>Hypothesis tests, confidence intervals, effect sizes, regression diagnostics and assumptions become part of the claim—not a footnote after it.</p>
+</div>
+</div>
+<div aria-label="Technical capabilities" class="capability-band">
+<div class="capability-track">
+<span>Python</span><i>✦</i><span>Pandas</span><i>✦</i><span>NumPy</span><i>✦</i><span>SciPy</span><i>✦</i><span>statsmodels</span><i>✦</i><span>Scikit-learn</span><i>✦</i><span>FastAPI</span><i>✦</i><span>SQL</span><i>✦</i><span>Neo4j</span><i>✦</i><span>PyTorch</span><i>✦</i>
+<span aria-hidden="true">Python</span><i aria-hidden="true">✦</i><span aria-hidden="true">Pandas</span><i aria-hidden="true">✦</i><span aria-hidden="true">NumPy</span><i aria-hidden="true">✦</i><span aria-hidden="true">SciPy</span><i aria-hidden="true">✦</i><span aria-hidden="true">statsmodels</span><i aria-hidden="true">✦</i><span aria-hidden="true">Scikit-learn</span><i aria-hidden="true">✦</i><span aria-hidden="true">FastAPI</span><i aria-hidden="true">✦</i><span aria-hidden="true">SQL</span><i aria-hidden="true">✦</i><span aria-hidden="true">Neo4j</span><i aria-hidden="true">✦</i><span aria-hidden="true">PyTorch</span><i aria-hidden="true">✦</i>
+</div>
+</div>
+</section>
+<section class="experience section-pad" data-section="" id="experience">
+<div class="section-index">07 / EXPERIENCE</div>
+<div class="experience-layout">
+<div class="experience-intro">
+<h2 class="display-heading reveal-lines">From research<br/><em>to real institutions.</em></h2>
+<p class="large-copy reveal-up">My work crosses independent research, AI learning analytics, mentorship, systems design and visual communication.</p>
+<a class="button button-ghost magnetic" href="assets/docs/Harkeerat_Singh_Research_CV_2026.pdf" rel="noopener" target="_blank"><span>Full résumé</span><b>↗</b></a>
+</div>
+<div class="timeline">
+<article class="timeline-item reveal-card">
+<div class="timeline-date">Jul 2025 — now</div>
+<div class="timeline-role"><span>Independent projects</span><h3>Lead Researcher</h3></div>
+<p>Designing reproducible experiments across reinforcement learning, Indic NLP, human-AI interaction and learning analytics, with explicit baselines, uncertainty and limitations.</p>
+</article>
+<article class="timeline-item reveal-card">
+<div class="timeline-date">Dec 2025 — Jan 2026</div>
+<div class="timeline-role"><span>CSRBOX</span><h3>Applied AI Research Intern</h3></div>
+<p>Analysed learner accuracy, response time and concept-level errors; developed visual knowledge maps and a psychometric framework spanning 100+ questions.</p>
+</article>
+<article class="timeline-item reveal-card">
+<div class="timeline-date">Feb 2024 — now</div>
+<div class="timeline-role"><span>Pro bono</span><h3>Academic Mentor &amp; Strategist</h3></div>
+<p>Mentored three students to successful examination outcomes and transformed rote preparation into diagnostic, logic-driven learning pathways.</p>
+</article>
+<article class="timeline-item reveal-card">
+<div class="timeline-date">Oct 2023 — Jun 2024</div>
+<div class="timeline-role"><span>Nankana Sahib Public School</span><h3>Graphic Designer</h3></div>
+<p>Built typography systems and editorial layouts for newsletters and institutional communication serving more than 4,000 students and faculty.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="about section-pad" data-section="" id="about">
+<div class="section-index">08 / ABOUT &amp; EDUCATION</div>
+<div class="about-grid">
+<div class="about-statement">
+<p class="micro-label">The person behind the pipeline</p>
+<h2 class="display-heading reveal-lines">Analytical by method.<br/><em>Human by design.</em></h2>
+<p class="large-copy reveal-up">I am pursuing a distance-mode BS in Applied AI and Data Science at IIT Jodhpur alongside a BCA at S.C.D. Government College (affiliated to Panjab University). My interdisciplinary practice bridges computational methods, education, cultural systems, psychology and public policy.</p>
+<div class="education-list">
+<article><span>01</span><div><strong>IIT Jodhpur</strong><small>BS Applied AI &amp; Data Science · distance mode · in progress</small></div></article>
+<article><span>02</span><div><strong>Panjab University</strong><small>BCA · S.C.D. Government College · in progress</small></div></article>
+<article><span>03</span><div><strong>CBSE Humanities</strong><small>Class XII · multidisciplinary · 97.2% (2025)</small></div></article>
+</div>
+</div>
+<div class="about-collage" data-collage="">
+<article class="collage-card collage-mentor" data-depth="0.12" data-tilt="">
+<span>MENTORSHIP</span><strong>3 / 3</strong><p>students cleared their target examinations.</p>
+</article>
+<article class="collage-card collage-design" data-depth="0.24" data-tilt="">
+<span>DESIGN</span><strong>4,000+</strong><p>readers reached through visual communication.</p>
+</article>
+<article class="collage-card collage-music" data-depth="0.18" data-tilt="">
+<span>MUSIC</span><strong>Rasa × Raag</strong><p>Hindustani classical and Sufi practice informs the work.</p>
+</article>
+<article class="collage-card collage-lead" data-depth="0.32" data-tilt="">
+<span>LEADERSHIP</span><strong>20+</strong><p>member student council structured through a governance manual.</p>
+</article>
+<div aria-hidden="true" class="collage-orbit"></div>
+</div>
+</div>
+</section>
+<section aria-label="Awards and recognition" class="recognition">
+<div class="recognition-heading"><span>09 / EARLIER DISTINCTIONS</span><p>Distinctions reported in my earlier CV.</p></div>
+<div class="recognition-rail">
+<div class="recognition-track">
+<span>Class XII Arts Stream Topper · 97.2%</span><i>✦</i>
+<span>State-Level Web Development · 3rd</span><i>✦</i>
+<span>District Quiz Champion</span><i>✦</i>
+<span>National-Level I-DESIGN · 2nd</span><i>✦</i>
+<span>Featured in The Tribune, Dainik Jagran, Jagbani &amp; Ajit</span><i>✦</i>
+<span aria-hidden="true">Class XII Arts Stream Topper · 97.2%</span><i aria-hidden="true">✦</i>
+<span aria-hidden="true">State-Level Web Development · 3rd</span><i aria-hidden="true">✦</i>
+<span aria-hidden="true">District Quiz Champion</span><i aria-hidden="true">✦</i>
+<span aria-hidden="true">National-Level I-DESIGN · 2nd</span><i aria-hidden="true">✦</i>
+<span aria-hidden="true">Featured in The Tribune, Dainik Jagran, Jagbani &amp; Ajit</span><i aria-hidden="true">✦</i>
+</div>
+</div>
+</section>
+<section class="contact" data-section="" id="contact">
+<canvas aria-hidden="true" id="contact-canvas"></canvas>
+<div aria-hidden="true" class="contact-glow"></div>
+<div class="contact-copy">
+<span class="section-index">10 / CONTACT</span>
+<p class="micro-label">Open to supervised research, interdisciplinary projects and thoughtful critique</p>
+<h2 class="contact-title reveal-lines">Good questions deserve<br/><em>careful collaborators.</em></h2>
+<a class="contact-email magnetic" href="mailto:harkeerat3211@gmail.com">harkeerat3211@gmail.com <b>↗</b></a>
+<div class="contact-links"><a href="https://github.com/iharkeerat" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+<a href="https://linkedin.com/in/harkeeratsingh01" rel="noopener" target="_blank">LinkedIn ↗</a>
+<a href="assets/docs/Harkeerat_Singh_Research_CV_2026.pdf" rel="noopener" target="_blank">Résumé ↗</a>
+<a href="#top">Back to top ↑</a>
+</div>
+</div>
+<div aria-hidden="true" class="contact-object" data-tilt="">
+<div class="contact-ring ring-a"></div><div class="contact-ring ring-b"></div><div class="contact-ring ring-c"></div>
+<div class="contact-core">HS</div>
+</div>
+<footer><span>Designed &amp; engineered by Harkeerat Singh</span><span>Independent work · Evidence-aware by design.</span><span>© 2026 · Updated 11 Nov 2026</span></footer>
+</section>
+</main>
+<dialog class="command-palette" data-command-dialog="">
+<form method="dialog">
+<div class="command-top"><span>Navigate portfolio</span><button aria-label="Close command menu" value="close">Esc</button></div>
+<input autocomplete="off" data-command-input="" placeholder="Type a section or project…" type="search"/>
+<div class="command-list" data-command-list=""><a data-command-item="" href="#work"><span>Featured research</span><small>W</small></a><a data-command-item="" href="case-studies/reality-attribution.html"><span>Reality Attribution</span><small>01</small></a><a data-command-item="" href="case-studies/pexora.html"><span>PEXORA</span><small>02</small></a><a data-command-item="" href="case-studies/mprint.html"><span>M-Print</span><small>03</small></a><a data-command-item="" href="case-studies/maqam-ai.html"><span>MAQAM-AI</span><small>04</small></a><a data-command-item="" href="case-studies/cognitive-mirror.html"><span>Cognitive Mirror</span><small>05</small></a><a data-command-item="" href="#additional"><span>Additional work</span><small>06</small></a><a data-command-item="" href="case-studies/manas-pu.html"><span>MANAS-PU</span><small>07</small></a><a data-command-item="" href="case-studies/evidence-boundaries.html"><span>Evidence boundaries</span><small>08</small></a><a data-command-item="" href="case-studies/c-question-bank.html"><span>C question bank</span><small>09</small></a><a data-command-item="" href="case-studies/scom.html"><span>Student council operations</span><small>10</small></a><a data-command-item="" href="#outputs"><span>Research outputs</span><small>O</small></a><a data-command-item="" href="#research"><span>Methods</span><small>M</small></a><a data-command-item="" href="#experience"><span>Experience</span><small>E</small></a><a data-command-item="" href="#contact"><span>Contact</span><small>C</small></a></div>
+</form>
+</dialog>
+<script defer="" src="script.js"></script>
 </body>
 </html>

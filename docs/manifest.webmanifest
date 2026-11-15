@@ -1,0 +1,16 @@
+{
+  "name": "Harkeerat Singh \u2014 Research & Evidence",
+  "short_name": "Harkeerat Research",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#070809",
+  "theme_color": "#070809",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

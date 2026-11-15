@@ -1,46 +1,56 @@
 # Harkeerat Singh
 
-**Student researcher and developer | Artificial intelligence · Computational modelling · Reproducible software**
+**Student researcher · Causal reasoning · Trustworthy AI · Computational modelling · Reproducible research software**
 
-I explore how to build systems that make **defensible claims from limited evidence**—from adaptive assessment software to provenance-aware interpretation of public records. My interests include machine learning, causal reasoning, learning technologies, data integrity and reproducible computational research.
+I work on a recurring question: **what can a system reasonably conclude from limited, imperfect or potentially misleading evidence?** My interests connect reinforcement learning, formal methods, educational technology, computational musicology and public-record interpretation.
 
-This page is a **research-and-project portfolio**: working prototypes, methods, evidence boundaries and open questions. It is not a list of verified publications or deployed production systems.
+This is a **research and software portfolio**, not a list of verified publications or production deployments. Each project states which claims are supported, which tests can be reproduced and what remains unresolved.
 
-## Selected public work
+## Selected work
 
-### [M-Print — Adaptive Assessment Prototype](https://github.com/iharkeerat/mprint-cognitive-engine)
+### 1. [Reality Attribution — Causal Diagnosis in Reinforcement Learning](https://github.com/iharkeerat/reality-attribution)
+**Reinforcement learning · Causal identifiability · Active diagnosis · Observation integrity**
 
-**Python · FastAPI · Neo4j · SQLite · Browser UI**
+Studies when environment changes, delayed observations and interface manipulation can produce identical agent-visible histories—and what additional intervention or protected evidence can separate them.
 
-Exploratory adaptive-assessment software with question delivery, response logging, accuracy-based routing, prerequisite-graph queries and a heuristic response-scoring module.
+- **Inspect:** [research overview](https://github.com/iharkeerat/reality-attribution/blob/main/docs/RESEARCH_OVERVIEW.md) · [GridWorld results](https://github.com/iharkeerat/reality-attribution/blob/main/docs/GRIDWORLD_FINDINGS.md) · [reproducibility limits](https://github.com/iharkeerat/reality-attribution/blob/main/docs/REPRODUCIBILITY.md)
+- **Evidence status:** archived deterministic GridWorld results and hash-checked reaggregation; the original simulator generator is not included in the public checkout. LunarLander-v3 experiments remain ongoing; no definitive population-level result is claimed.
 
-- **Research question:** What can response-level signals support in a learning system, and where does interpretation go beyond the evidence?
-- **Project status:** inspectable source code; no validated cognitive diagnoses or student learning-effectiveness study.
-- **Explore:** [repository](https://github.com/iharkeerat/mprint-cognitive-engine) · [documentation revision under review](https://github.com/iharkeerat/mprint-cognitive-engine/pull/1).
+### 2. [MAQAM AI — Explainable Computational Musicology](https://github.com/iharkeerat/maqam-ai)
+**Python · Dynamic programming · Symbolic music · FastAPI · TypeScript**
 
-### [Evidence Boundaries in Public Examination Reporting](https://github.com/iharkeerat/evidence-boundaries-research)
+An experimental workbench for symbolic music and formal syllable-to-note alignment, with an exact constrained optimizer, conservative score parsing and independent, fixture-based software checks.
 
-**Documentary methods · Public administration · Source-to-claim analysis**
+- **Inspect:** [two-minute reviewer guide](https://github.com/iharkeerat/maqam-ai/blob/main/docs/REVIEWER_GUIDE.md) · [running the demo](https://github.com/iharkeerat/maqam-ai/blob/main/docs/GETTING_STARTED.md) · [results and limitations](https://github.com/iharkeerat/maqam-ai/blob/main/docs/RESULTS_AND_LIMITATIONS.md)
+- **Evidence status:** formal algorithms and constructed-example tests are inspectable. Real-world lyric-alignment accuracy has **not** been independently established.
 
-An exploratory comparison of official SSC, NEET-UG and CUET-UG notices with selected public reports, focusing on the difference between reported administrative activity and supported outcome claims.
+### 3. [M-Print — Adaptive Assessment Prototype](https://github.com/iharkeerat/mprint-cognitive-engine)
+**Python · FastAPI · Neo4j · SQLite · Learning analytics**
 
-- **Question:** When does a corrected figure or announced process become an unsupported assertion about a changed result?
-- **Project status:** working research report; selected, nonrepresentative documentary cases; no claim of journal acceptance or representative error rates.
-- **Explore:** [standalone research repository](https://github.com/iharkeerat/evidence-boundaries-research) · [full research overview](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/paper/RESEARCH_OVERVIEW.md).
+Explores response logging, accuracy-based question routing, prerequisite-graph queries and heuristic response-label summaries.
 
-## Research and engineering principles
+- **Inspect:** [repository](https://github.com/iharkeerat/mprint-cognitive-engine) · [research scope](https://github.com/iharkeerat/mprint-cognitive-engine/blob/main/docs/RESEARCH_SCOPE.md) · [setup notes](https://github.com/iharkeerat/mprint-cognitive-engine/blob/main/docs/REPRODUCIBILITY.md)
+- **Evidence status:** software prototype; response labels are not validated cognitive diagnoses, and the application is not production-ready.
 
-- **Reproduce what is reported.** Identify source code, assumptions, data and exact tests.
-- **Separate claims from evidence.** A generated output, corrected number or published schedule does not automatically verify a real-world outcome.
-- **Document negative results.** Restricted models, failures and unresolved evaluation matter.
-- **Avoid inflated labels.** Prototypes are not deployments; heuristics are not validated diagnoses; manuscripts are not publications.
+### 4. [Evidence Boundaries in Public Examination Reporting](https://github.com/iharkeerat/evidence-boundaries-research)
+**Documentary research · Source provenance · Claim verification · Public administration**
 
-## Technical areas I am working with
+Compares selected official examination notices with reporting about numerical corrections and administrative processes, separating direct contradictions from claims not established by the cited evidence.
 
-Python, data analysis, API development, graph-based modelling, testing, source verification and research writing. Technical depth varies across projects; the corresponding repository documents actual code rather than an unverified general skill ranking.
+- **Inspect:** [research overview](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/paper/RESEARCH_OVERVIEW.md) · [methodology](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/methodology/METHODOLOGY.md) · [source register](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/methodology/SOURCE_REGISTER.md)
+- **Evidence status:** exploratory, purposively selected cases; author-led and materially AI-assisted; neither independently coded nor peer reviewed. The complete report remains an author-review draft.
 
-## Contact and collaboration
+## Research approach
 
-For project questions, please use the issue tracker on the relevant public repository. Do not share sensitive personal data, credentials or unpublished records in public issues.
+- **Separate observations from interpretations.** A measurement, a passing test or an official process announcement is not automatically proof of a broader real-world outcome.
+- **Make evidence inspectable.** Link code, assumptions, original artifacts, checks and known reproduction boundaries.
+- **Treat limitations as results to document.** Negative findings and unresolved hypotheses help define better experiments.
+- **Describe contributions accurately.** Student-led direction, implementation, source checks, AI assistance and external materials should be attributed at the granularity each project's records support.
 
-> **Authorship and tools:** These are student-led projects. For *Evidence Boundaries*, the student identifies the research direction, overall framing, and responsibility for final claims as their own. Generative AI assisted with source discovery and comparison, provisional coding, drafting, citation checks, and document preparation. AI was neither a co-author nor an independent research validator. See the [project-specific authorship statement](research/EXAM_EVIDENCE_BOUNDARIES.md#authorship-and-ai-assistance). Individual contributions should be presented only to the extent the student can personally substantiate.
+## Technical interests
+
+Python, APIs, data analysis, testable experiments, graph modelling, formal optimisation, causal inference and research writing. Demonstrated depth differs by repository; inspect the source and evidence rather than assuming uniform proficiency.
+
+## Contact
+
+For project-related questions or collaboration, open an issue in the relevant public repository. Please do not post personal records, unpublished research archives or credentials in a public issue.

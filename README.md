@@ -13,7 +13,7 @@ This is a **research and software portfolio**, not a list of verified publicatio
 
 Studies when environment changes, delayed observations and interface manipulation can produce identical agent-visible histories—and what additional intervention or protected evidence can separate them.
 
-- **Inspect:** [research overview](https://github.com/iharkeerat/reality-attribution/blob/main/docs/RESEARCH_OVERVIEW.md) · [GridWorld results](https://github.com/iharkeerat/reality-attribution/blob/main/docs/GRIDWORLD_FINDINGS.md) · [reproducibility limits](https://github.com/iharkeerat/reality-attribution/blob/main/docs/REPRODUCIBILITY.md)
+- **Inspect:** [reviewer guide](https://github.com/iharkeerat/reality-attribution/blob/main/docs/REVIEWER_GUIDE.md) · [research overview](https://github.com/iharkeerat/reality-attribution/blob/main/docs/RESEARCH_OVERVIEW.md) · [GridWorld results](https://github.com/iharkeerat/reality-attribution/blob/main/docs/GRIDWORLD_FINDINGS.md) · [reproducibility limits](https://github.com/iharkeerat/reality-attribution/blob/main/docs/REPRODUCIBILITY.md)
 - **Evidence status:** archived deterministic GridWorld results and hash-checked reaggregation; the original simulator generator is not included in the public checkout. LunarLander-v3 experiments remain ongoing; no definitive population-level result is claimed.
 
 ### 2. [MAQAM AI — Explainable Computational Musicology](https://github.com/iharkeerat/maqam-ai)
@@ -37,7 +37,7 @@ Explores response logging, accuracy-based question routing, prerequisite-graph q
 
 Compares selected official examination notices with reporting about numerical corrections and administrative processes, separating direct contradictions from claims not established by the cited evidence.
 
-- **Inspect:** [research overview](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/paper/RESEARCH_OVERVIEW.md) · [methodology](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/methodology/METHODOLOGY.md) · [source register](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/methodology/SOURCE_REGISTER.md)
+- **Inspect:** [reviewer guide](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/REVIEWER_GUIDE.md) · [research overview](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/paper/RESEARCH_OVERVIEW.md) · [methodology](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/methodology/METHODOLOGY.md) · [source register](https://github.com/iharkeerat/evidence-boundaries-research/blob/main/methodology/SOURCE_REGISTER.md)
 - **Evidence status:** exploratory, purposively selected cases; author-led and materially AI-assisted; neither independently coded nor peer reviewed. The complete report remains an author-review draft.
 
 ## Research approach

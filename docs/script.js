@@ -144,27 +144,6 @@
   $$('a', mobileMenu || document.createElement('div')).forEach((link) => link.addEventListener('click', closeMenu));
   addEventListener('resize', () => { if (innerWidth > 760) closeMenu(); });
 
-  // Command palette.
-  const commandDialog = $('[data-command-dialog]');
-  const commandInput = $('[data-command-input]');
-  const commandItems = $$('[data-command-item]');
-  function openCommand() {
-    if (!commandDialog) return;
-    commandDialog.showModal();
-    requestAnimationFrame(() => commandInput?.focus());
-  }
-  $('[data-command-open]')?.addEventListener('click', openCommand);
-  addEventListener('keydown', (event) => {
-    const shortcut = (event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k';
-    if (shortcut) { event.preventDefault(); openCommand(); }
-    if (event.key === 'Escape' && commandDialog?.open) commandDialog.close();
-  });
-  commandInput?.addEventListener('input', () => {
-    const query = commandInput.value.trim().toLowerCase();
-    commandItems.forEach((item) => item.classList.toggle('hidden', !item.textContent.toLowerCase().includes(query)));
-  });
-  commandItems.forEach((item) => item.addEventListener('click', () => commandDialog?.close()));
-
   // Canvas utilities.
   function setupCanvas(canvas) {
     if (!canvas) return null;
@@ -230,7 +209,7 @@
     };
     requestAnimationFrame(draw);
   }
-  createConstellation($('#constellation'));
-  createConstellation($('#contact-canvas'), { contact: true });
+
+
 
 })();

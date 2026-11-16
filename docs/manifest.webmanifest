@@ -1,10 +1,10 @@
 {
-  "name": "Harkeerat Singh \u2014 Research & Evidence",
-  "short_name": "Harkeerat Research",
+  "name": "Harkeerat Singh \u2014 Research & Writing",
+  "short_name": "Harkeerat Singh",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#070809",
-  "theme_color": "#070809",
+  "background_color": "#f2eee7",
+  "theme_color": "#f2eee7",
   "icons": [
     {
       "src": "assets/icons/favicon.svg",

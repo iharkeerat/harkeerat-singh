@@ -1,15 +1,1 @@
-{
-  "name": "Harkeerat Singh \u2014 Research and writing",
-  "short_name": "Harkeerat Singh",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#060710",
-  "theme_color": "#060710",
-  "icons": [
-    {
-      "src": "assets/icons/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    }
-  ]
-}
+{"name": "Harkeerat Singh \u2014 Research Portfolio", "short_name": "Harkeerat Singh", "start_url": "./", "display": "standalone", "background_color": "#080812", "theme_color": "#080812", "icons": [{"src": "assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]}

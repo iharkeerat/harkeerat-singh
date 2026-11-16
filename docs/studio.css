@@ -76,3 +76,9 @@ html,body{overflow-x:clip}
 }
 @media(max-width:620px){.mobile-work-thumb img{max-height:155px}}
 @keyframes cube-rotate{0%{transform:rotateX(-25deg) rotateY(-48deg)}25%{transform:rotateX(-12deg) rotateY(35deg)}50%{transform:rotateX(21deg) rotateY(145deg)}75%{transform:rotateX(-6deg) rotateY(240deg)}100%{transform:rotateX(-25deg) rotateY(312deg)}}
+
+/* Public source links exist only where verifiable research material is accessible. */
+.study-links{margin-top:24px}
+.study-links a{display:inline-flex;align-items:center;gap:28px;padding:12px 0;border-bottom:1px solid #8d75d0;color:#dacaff;font:600 12px var(--sans);transition:color .2s,border-color .2s}
+.study-links a:hover{color:var(--violet);border-color:var(--violet)}
+.study-links a span{font:18px var(--serif)}

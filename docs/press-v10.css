@@ -200,3 +200,93 @@ html,body {background:#05060a;}
 @media(max-width:920px){.materials-intro{display:block}.materials-intro p{margin:22px 0 0;max-width:650px}}
 @media(max-width:670px){.materials-list{grid-template-columns:1fr}.materials-entry{padding:21px 0}.materials-main strong{font-size:37px}.materials-intro{margin-bottom:34px}.materials-footnote{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.materials-entry,.materials-arrow{transition:none}}
+
+
+/* V12 — editorial rhythm / whitespace correction.
+   Tighten repeated section padding and stacked title margins while keeping
+   the oversized typography, native page scrolling and motion system intact. */
+.section-space{padding-block:clamp(60px,6.4vw,98px)}
+.section-meta{padding-bottom:15px}
+.hero{min-height:min(820px,95svh);padding-top:calc(var(--header-h) + 40px);padding-bottom:52px;gap:clamp(30px,4.2vw,68px)}
+.hero-art{min-height:clamp(455px,44vw,575px)}
+.hero-title{margin-block:30px 25px}
+.hero-links{margin-top:25px}
+.intro-grid{margin-top:clamp(30px,3.5vw,50px);gap:clamp(27px,5.2vw,83px)}
+.work-section{padding-bottom:clamp(68px,6.5vw,100px)}
+.work-head,.feature-heading,.writing-header,.archive-head{margin-top:30px;margin-bottom:clamp(27px,3.1vw,45px)}
+.work-row{padding-block:24px 25px;min-height:102px}
+.preview-inner{min-height:500px}
+.section-footnote{margin-top:18px}
+.feature-row{padding-block:22px 25px}
+.materials-intro{margin-block:28px 32px;gap:34px}
+.materials-entry{padding-block:18px 20px}
+.materials-footnote{margin-top:18px}
+.editorial-break{padding:clamp(52px,5vw,74px) var(--gutter)}
+.editorial-break p{margin:clamp(22px,2.5vw,33px) 0 clamp(25px,2.8vw,38px)}
+.writing-entry{min-height:365px;gap:24px}
+.writing-feature{min-height:400px}
+.writing-entry h3{margin-block:26px 14px}
+.archive-foreword{margin-bottom:42px;padding-block:23px 25px}
+.archive-columns{column-gap:clamp(28px,5vw,84px)}
+.archive-col h3:not(:first-child){margin-top:34px}
+.archive-item{padding-block:14px}
+.archive-bottom{margin-top:42px}
+.about-content{margin-top:36px;column-gap:clamp(32px,6vw,96px)}
+.contact-overline{margin-top:41px;margin-bottom:21px}
+.contact-section h2{margin-bottom:56px}
+.contact-secondary{margin-top:32px}
+.footer{margin-top:68px}
+/* Case studies had a separate viewport-height floor and cumulative white space. */
+.study-hero{min-height:0;padding-top:calc(var(--header-h) + 54px);padding-bottom:56px}
+.study-return{margin-block:24px 28px}
+.study-intro{gap:clamp(25px,4vw,55px)}
+.study-meta{margin-top:50px}
+.study-body{padding-top:70px;padding-bottom:62px}
+.study-body>.section-meta{margin-bottom:42px}
+.case-intro{margin-bottom:55px}
+.case-section{padding-block:35px 42px}
+.study-next{padding-block:43px 65px}
+.study-next a{margin-top:20px}
+@media(max-width:920px){
+ .hero{min-height:0;padding-top:calc(var(--header-h) + 43px);gap:26px}
+ .hero-art{min-height:440px}
+ .work-row{min-height:0}
+ .intro-grid{gap:28px}
+ .about-content{row-gap:30px}
+ .study-body{padding-top:62px;padding-bottom:50px}
+}
+@media(max-width:620px){
+ .section-space{padding-block:52px}
+ .section-meta{padding-bottom:12px}
+ .hero{padding-top:100px;padding-bottom:40px;gap:22px}
+ .hero-title{margin-block:20px 20px}
+ .hero-art{min-height:390px}
+ .hero-links{margin-top:22px}
+ .intro-grid{margin-top:30px}
+ .work-head,.feature-heading,.writing-header,.archive-head{margin-top:25px;margin-bottom:28px}
+ .work-row{padding-block:21px 22px;min-height:0}
+ .feature-row{padding-block:19px 22px}
+ .materials-intro{margin-block:23px 26px}
+ .materials-entry{padding-block:17px 18px}
+ .editorial-break{padding-block:48px}
+ .editorial-break p{margin-block:23px 24px}
+ .writing-entry,.writing-feature{min-height:320px;padding:24px 22px}
+ .writing-entry h3{margin-block:22px 12px}
+ .archive-foreword{margin-bottom:30px;padding-block:20px}
+ .archive-columns{gap:35px}
+ .archive-col h3:not(:first-child){margin-top:30px}
+ .archive-item{padding-block:12px}
+ .archive-bottom{margin-top:30px}
+ .about-content{margin-top:28px;gap:24px}
+ .contact-overline{margin-top:30px}
+ .contact-section h2{margin-bottom:40px}
+ .footer{margin-top:52px}
+ .study-hero{padding-top:calc(var(--header-h) + 45px);padding-bottom:45px}
+ .study-return{margin-block:20px 25px}
+ .study-meta{margin-top:36px}
+ .study-body{padding-block:53px 46px}
+ .study-body>.section-meta{margin-bottom:32px}
+ .case-intro{margin-bottom:38px}
+ .case-section{padding-block:29px 34px}
+ .study-next{padding-block:38px 50px}
+}

@@ -82,3 +82,102 @@ html,body{overflow-x:clip}
 .study-links a{display:inline-flex;align-items:center;gap:28px;padding:12px 0;border-bottom:1px solid #8d75d0;color:#dacaff;font:600 12px var(--sans);transition:color .2s,border-color .2s}
 .study-links a:hover{color:var(--violet);border-color:var(--violet)}
 .study-links a span{font:18px var(--serif)}
+
+
+/* V9 / Cursor and editorial refinements — selective motion, not decoration for its own sake. */
+:root { --cursor-accent:#ba9aff; --cursor-blue:#7898ff; }
+/* A device with a mouse and no reduced-motion preference gets the animated cursor.
+   The real cursor remains on touch devices, for keyboard users and when scripts fail. */
+.site-cursor{display:none}
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  html.cursor-ready,html.cursor-ready a,html.cursor-ready button,html.cursor-ready [tabindex]{cursor:none!important}
+  .site-cursor{position:fixed;left:0;top:0;width:0;height:0;display:block;z-index:1000;pointer-events:none;opacity:0;transition:opacity .14s ease}
+  html.cursor-ready .site-cursor{opacity:1}
+  .cursor-point,.cursor-ring{position:absolute;display:grid;place-items:center;left:0;top:0;transform:translate3d(-50%,-50%,0);border-radius:50%;pointer-events:none}
+  .cursor-point{width:6px;height:6px;background:#faf4ff;box-shadow:0 0 14px #967aff77}
+  .cursor-ring{width:42px;height:42px;border:1px solid #a482f7aa;background:rgba(122,91,211,.045);transition:width .32s cubic-bezier(.2,.8,.2,1),height .32s cubic-bezier(.2,.8,.2,1),background .25s,border-color .25s}
+  .cursor-word{opacity:0;transform:translateY(2px);transition:opacity .18s,transform .2s;color:#10101a;font:700 10px/1 var(--mono);letter-spacing:.05em}
+  .site-cursor[data-kind="link"] .cursor-ring{width:55px;height:55px;border-color:#bda8fc;background:#9880ec20}
+  .site-cursor[data-kind="project"] .cursor-ring{width:78px;height:78px;background:#bd9aff;border-color:#bd9aff}
+  .site-cursor[data-kind="project"] .cursor-point{opacity:0}
+  .site-cursor[data-kind="project"] .cursor-word{opacity:1;transform:translateY(0)}
+  html.cursor-ready.cursor-out .site-cursor{opacity:0}
+}
+/* Studio lighting on the illustration, controlled by pointer position and always very subtle. */
+.hero-art:after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(430px circle at var(--glow-x,50%) var(--glow-y,48%),#9382f315,transparent 76%);transition:opacity .5s ease;opacity:.65}
+.hero-art:hover:after{opacity:1}
+.art-geometry{z-index:2}
+.art-top,.art-bottom{z-index:3}
+/* Project index: a stepped editorial spine, rather than rows all looking identical. */
+.work-list{counter-reset:research;border-top:1px solid #65558e}
+.work-row{isolation:isolate;transition:background .3s,padding-left .4s cubic-bezier(.2,.8,.2,1),border-color .3s}
+.work-row:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#6252a314,transparent 62%);transform:scaleX(0);transform-origin:left;transition:transform .46s cubic-bezier(.2,.8,.2,1)}
+.work-row:hover:after,.work-row:focus-visible:after,.work-row.is-selected:after{transform:scaleX(1)}
+.work-row:hover .work-arrow,.work-row:focus-visible .work-arrow{transform:translate(5px,-5px)}
+.preview-inner{overflow:hidden;transition:border-color .35s ease,box-shadow .4s ease}
+.preview-inner:before{content:'';position:absolute;left:0;top:0;right:0;height:1px;background:linear-gradient(90deg,var(--violet),transparent 76%);pointer-events:none}
+.preview-inner:hover{border-color:#987bdb;box-shadow:0 18px 65px #0b082566}
+.work-visual img{transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .6s ease}
+.work-visual.is-current img{filter:saturate(.9) contrast(1.06)}
+/* Research notes: contemporary newspaper-ledger spacing and staggered rhythm. */
+.feature-row{position:relative;overflow:hidden;transition:background .35s,padding-left .4s cubic-bezier(.2,.8,.2,1)}
+.feature-row:before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:#b394fb;transform:scaleY(0);transform-origin:bottom;transition:transform .38s cubic-bezier(.2,.8,.2,1)}
+.feature-row:hover:before,.feature-row:focus-visible:before{transform:scaleY(1)}
+.feature-row b{transition:color .25s ease}
+.feature-row:hover b{color:#c5adff}
+.fr-arrow{transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.feature-row:hover .fr-arrow{transform:translate(5px,-5px)}
+/* Writing is a deliberately asymmetric two-story magazine spread.
+   The manuscripts are not linked because accepted/public files are not yet available. */
+.writing-section{background:linear-gradient(135deg,#0b0b18,#0b0b16 65%,#121127)}
+.writing-list{display:grid;grid-template-columns:minmax(0,1.26fr) minmax(0,.74fr);gap:18px;border-top:0}
+.writing-entry{position:relative;display:flex;min-height:420px;flex-direction:column;justify-content:space-between;gap:36px;padding:clamp(26px,3.2vw,53px);border:1px solid #493f64;background:linear-gradient(152deg,#19152b,#0e1022 75%);overflow:hidden;transition:border-color .35s,transform .45s cubic-bezier(.2,.8,.2,1),background .4s}
+.writing-entry:before{content:'';position:absolute;left:0;top:0;right:0;height:1px;background:linear-gradient(90deg,#ba8dff,transparent 72%);opacity:.75}
+.writing-entry:after{position:absolute;right:20px;bottom:25px;font:italic clamp(135px,15vw,230px)/.75 var(--serif);color:#a984ff10;pointer-events:none}
+.writing-feature:after{content:'01'}
+.writing-secondary:after{content:'02';color:#7590ff0d}
+.writing-feature{min-height:480px;background:radial-gradient(circle at 85% 10%,#59418b33,transparent 42%),linear-gradient(152deg,#211832,#111021 74%)}
+.writing-secondary{background:linear-gradient(157deg,#101a2d,#111020 76%)}
+.writing-entry:hover{border-color:#9d7fe1;transform:translateY(-5px)}
+.writing-entry h3{position:relative;font-size:clamp(48px,6.3vw,98px);max-width:700px;margin:35px 0 20px;overflow-wrap:break-word}
+.writing-secondary h3{font-size:clamp(43px,4.8vw,75px)}
+.writing-entry p{position:relative;max-width:560px;font-size:15px;line-height:1.75;color:#bbb6cd}
+.writing-year{position:relative;align-self:start;border-top:1px solid #66577b;padding-top:17px;width:100%;color:#b6a1e9;letter-spacing:.11em}
+/* Archive masthead: context first, then a two-column chronological ledger. */
+.archive-section{background:#0e0d1b}
+.archive-head{margin-bottom:38px}
+.archive-foreword{display:grid;grid-template-columns:minmax(120px,.25fr) minmax(0,1.2fr) minmax(100px,.24fr);gap:30px;align-items:start;padding:28px 0 33px;border-top:1px solid #71609f;border-bottom:1px solid var(--rule);margin-bottom:72px}
+.archive-issue,.archive-caption{font:500 10px/1.6 var(--mono);color:#ae9bd8;letter-spacing:.07em;text-transform:uppercase}
+.archive-caption{text-align:right;color:#87819d}
+.archive-foreword p{font:normal clamp(25px,3vw,43px)/1.2 var(--serif);letter-spacing:-.022em;margin:-5px 0 0;max-width:850px}
+.archive-foreword p em{color:#b69afa;font-style:italic}
+.archive-col h3{font-size:clamp(35px,3.6vw,53px);margin-bottom:17px}
+.archive-item{position:relative;transition:background .3s,padding-left .3s}
+.archive-item:hover{background:#8e74d80c;padding-left:9px}
+.archive-item>span{color:#b69cfa}
+.archive-col:nth-child(2){border-left:1px solid #3c3359;padding-left:clamp(28px,4vw,60px)}
+.archive-bottom{padding-top:26px;border-top:1px solid var(--rule)}
+/* One legible contact action; make it feel tactile but not gimmicky. */
+.contact-mail span{display:inline-block;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.contact-mail:hover span{transform:translate(8px,-6px)}
+/* Refined smaller-screen layout; native cursor and normal scrolling remain untouched. */
+@media(max-width:920px){
+ .writing-list{grid-template-columns:1fr;gap:15px}
+ .writing-entry,.writing-feature{min-height:350px}
+ .writing-secondary h3{font-size:clamp(42px,7vw,75px)}
+ .archive-foreword{grid-template-columns:140px 1fr;gap:16px 22px}
+ .archive-caption{grid-column:1/-1;text-align:left}
+ .archive-col:nth-child(2){border-left:0;padding-left:0}
+}
+@media(max-width:620px){
+ .writing-entry,.writing-feature{min-height:360px;padding:26px 22px}
+ .writing-entry h3,.writing-secondary h3{font-size:clamp(47px,11vw,66px)}
+ .archive-foreword{grid-template-columns:1fr;margin-bottom:50px;gap:12px;padding:25px 0}
+ .archive-caption{grid-column:auto}
+ .archive-foreword p{font-size:clamp(28px,8vw,41px)}
+ .feature-row:hover{padding-left:4px}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-art:after{display:none}
+ .writing-entry:hover,.archive-item:hover{transform:none}
+}

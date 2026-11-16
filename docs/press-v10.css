@@ -181,3 +181,22 @@ html,body {background:#05060a;}
 }
 .study-next {background:radial-gradient(ellipse at 85% 38%,rgba(107,73,233,.12),transparent 65%),#080911;}
 @media(max-width:620px){.study-hero{background-size:54px 54px,54px 54px,auto,auto}}
+
+/* V11 — source-to-project links. A restrained index, not another gallery. */
+.materials-section{position:relative;background:linear-gradient(150deg,#08080e,#0d0b19 72%,#0a0a13);border-block:1px solid var(--rule);isolation:isolate}
+.materials-intro{display:flex;gap:48px;justify-content:space-between;align-items:end;margin:42px 0 54px}
+.materials-intro .section-title{margin:0}
+.materials-intro p{font:400 15px/1.75 var(--sans);max-width:410px;margin:0 0 11px;color:var(--faint)}
+.materials-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(25px,5vw,86px);border-top:1px solid var(--rule-strong)}
+.materials-entry{min-width:0;display:flex;align-items:center;justify-content:space-between;gap:25px;border-bottom:1px solid var(--rule);padding:24px 0 27px;transition:padding-left .32s var(--ease),border-color .25s,background-color .25s}
+.materials-entry:hover,.materials-entry:focus-visible{padding-left:9px;border-color:#a990fb}
+.materials-main{display:grid;gap:7px;min-width:0}
+.materials-kicker{font:500 10px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.055em;color:#aaa0c6}
+.materials-main strong{font:400 clamp(31px,3.2vw,47px)/1.05 var(--serif);letter-spacing:-.025em;color:var(--paper)}
+.materials-main small{font:400 12px/1.55 var(--sans);color:var(--faint);max-width:460px}
+.materials-arrow{font:400 25px/1 var(--serif);color:var(--violet);transition:transform .3s var(--ease)}
+.materials-entry:hover .materials-arrow,.materials-entry:focus-visible .materials-arrow{transform:translate(5px,-5px)}
+.materials-footnote{margin:25px 0 0;color:var(--mute);font:400 11px/1.7 var(--mono)}
+@media(max-width:920px){.materials-intro{display:block}.materials-intro p{margin:22px 0 0;max-width:650px}}
+@media(max-width:670px){.materials-list{grid-template-columns:1fr}.materials-entry{padding:21px 0}.materials-main strong{font-size:37px}.materials-intro{margin-bottom:34px}.materials-footnote{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.materials-entry,.materials-arrow{transition:none}}

@@ -213,3 +213,17 @@
 
 
 })();
+
+// Reader control: pause the decorative tape, cube and other continuous motion.
+// This intentionally doesn't interfere with the browser's natural page scrolling.
+(() => {
+  const toggle = document.querySelector('.motion-toggle');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const next = document.documentElement.dataset.motion === 'paused' ? 'running' : 'paused';
+    document.documentElement.dataset.motion = next;
+    toggle.setAttribute('aria-pressed', String(next === 'paused'));
+    toggle.setAttribute('aria-label', next === 'paused' ? 'Resume animated motion' : 'Pause animated motion');
+    toggle.innerHTML = next === 'paused' ? 'Resume motion <span aria-hidden="true">▶</span>' : 'Pause motion <span aria-hidden="true">Ⅱ</span>';
+  });
+})();

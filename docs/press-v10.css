@@ -1,0 +1,183 @@
+/* FIELD NOTES / ISSUE 10
+   Dark print-room treatment: the grid is scaffolding, not wallpaper.
+   No forced scroll, no extra animation loops, no external texture files. */
+:root {
+  --ink:#05060a;
+  --ink2:#090a11;
+  --ink3:#10111d;
+  --paper:#f0edf7;
+  --faint:#b9b5c8;
+  --mute:#8e899f;
+  --rule:rgba(210,199,244,.16);
+  --rule-strong:rgba(218,205,255,.31);
+  --violet:#ae7dff;
+  --violet-bright:#c49eff;
+  --electric:#6789ff;
+  --azure:#91aafa;
+  --print-paper:#eee8df;
+  --print-ink:#272331;
+}
+html,body {background:#05060a;}
+.header.scrolled {background:rgba(5,6,12,.94);border-color:rgba(203,184,252,.23);}
+.mobile-nav {background:#080910;}
+
+/* Fine two-axis grid over near-black, with localized, blurred violet/blue light.
+   Each section gets a different glow position to avoid a repeating template look. */
+.hero,.intro-section,.work-section,.feature-section,.editorial-break,
+.writing-section,.archive-section,.about-section,.contact-section {
+  --light-x:78%;--light-y:14%;--light-tint:rgba(113,70,224,.115);
+  background-color:#05060a;
+  background-image:
+    linear-gradient(to right,rgba(168,144,230,.036) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(168,144,230,.031) 1px,transparent 1px),
+    radial-gradient(ellipse 45vw 440px at var(--light-x) var(--light-y),var(--light-tint),transparent 76%),
+    radial-gradient(ellipse 42vw 420px at 8% 86%,rgba(61,83,205,.065),transparent 75%);
+  background-size:72px 72px,72px 72px,auto,auto;
+  background-position:center top,center top,center,center;
+}
+.hero {--light-x:81%;--light-y:35%;--light-tint:rgba(122,75,248,.205);}
+.intro-section {--light-x:6%;--light-y:13%;--light-tint:rgba(95,69,182,.075);}
+.work-section {--light-x:96%;--light-y:23%;--light-tint:rgba(112,78,237,.14);}
+.feature-section {--light-x:8%;--light-y:38%;--light-tint:rgba(55,85,202,.09);}
+.editorial-break {--light-x:74%;--light-y:41%;--light-tint:rgba(105,67,214,.155);}
+.writing-section {--light-x:14%;--light-y:15%;--light-tint:rgba(96,58,202,.13);}
+.archive-section {--light-x:91%;--light-y:10%;--light-tint:rgba(78,56,190,.11);}
+.about-section {--light-x:6%;--light-y:25%;--light-tint:rgba(74,55,174,.075);}
+.contact-section {--light-x:85%;--light-y:42%;--light-tint:rgba(103,64,220,.17);}
+/* The old vertical-only hero grid is replaced by the quieter common square grid. */
+.hero-overlay-grid {opacity:0;}
+
+/* A single, lit research object remains the hero's visual focal point. */
+.hero-art {
+  border-color:rgba(173,145,245,.31);
+  background:
+    radial-gradient(ellipse at 53% 56%,rgba(120,74,239,.16),transparent 60%),
+    radial-gradient(ellipse at 83% 14%,rgba(55,81,199,.09),transparent 56%),
+    linear-gradient(90deg,rgba(171,150,246,.03) 1px,transparent 1px),
+    linear-gradient(0deg,rgba(171,150,246,.03) 1px,transparent 1px),
+    #080911;
+  background-size:auto,auto,66px 66px,66px 66px,auto;
+  box-shadow:0 20px 76px rgba(0,0,0,.18),inset 0 0 0 1px rgba(235,221,255,.02);
+}
+.hero-art .art-top span:last-child {
+  display:inline-block;
+  background:repeating-linear-gradient(0deg,rgba(26,19,29,.024) 0 1px,transparent 1px 4px),var(--print-paper);
+  color:var(--print-ink);
+  padding:7px 11px;
+  box-shadow:3px 4px 0 rgba(0,0,0,.18);
+  transform:rotate(1.2deg);
+}
+.hero .eyebrow {color:#c0a3ff;}
+.hero-title .name-two {color:#bf92ff;}
+
+/* Editorial ruling: a publication has margins, folios, and deliberate hierarchy. */
+.section-meta {border-bottom:1px solid rgba(220,206,255,.18);padding-bottom:14px;}
+.section-meta span:last-child {font-variant-numeric:tabular-nums;}
+.section-title .title-punct {color:var(--violet);}
+.work-list {border-top-color:rgba(187,166,238,.46);}
+.work-row:hover,.work-row:focus-visible,.work-row.is-selected {
+  background:linear-gradient(90deg,rgba(115,72,223,.12),transparent 77%);
+}
+.preview-inner {
+  background:rgba(10,10,20,.92);
+  border-color:rgba(171,150,227,.32);
+}
+.visual-stage {background:radial-gradient(ellipse at 54% 35%,rgba(80,64,178,.22),transparent 75%),#0b0b18;}
+.visual-fig {
+  display:inline-block;
+  background:rgba(238,232,223,.93);
+  color:#292435;
+  padding:6px 9px;
+  font-size:9px;
+  letter-spacing:.06em;
+  box-shadow:3px 3px 0 rgba(0,0,0,.16);
+}
+
+/* Writing is an actual spread rather than a pair of glowing marketing cards.
+   One off-white press label gives the paper cue without repainting the whole site beige. */
+.writing-entry {
+  background:linear-gradient(145deg,rgba(29,23,51,.94),rgba(8,9,19,.97) 70%);
+  border-color:rgba(183,164,224,.3);
+}
+.writing-feature {
+  background:
+    radial-gradient(circle at 92% 14%,rgba(142,90,243,.12),transparent 48%),
+    linear-gradient(153deg,#191329,#0b0b16 78%);
+}
+.writing-secondary {background:linear-gradient(155deg,#11162a,#080a14 76%);}
+.writing-entry::after {content:none;}
+.writing-feature .writing-type {
+  width:fit-content;
+  max-width:100%;
+  display:inline-block;
+  padding:9px 12px;
+  background:repeating-linear-gradient(0deg,rgba(42,33,48,.025) 0 1px,transparent 1px 4px),var(--print-paper);
+  color:var(--print-ink);
+  line-height:1.55;
+  transform:rotate(-1deg);
+  box-shadow:5px 5px 0 rgba(0,0,0,.22);
+}
+.writing-secondary .writing-type {border-bottom:1px solid rgba(192,167,252,.52);padding-bottom:7px;}
+.writing-year {border-top-color:rgba(206,189,255,.34);}
+.writing-entry:hover {box-shadow:0 24px 55px rgba(0,0,0,.22);}
+
+/* The archive is typeset as a ledger with a single paper folio. */
+.archive-foreword {position:relative;border-top-color:rgba(180,157,229,.53);}
+.archive-issue {
+  display:inline-block;
+  justify-self:start;
+  width:fit-content;
+  padding:9px 12px;
+  color:var(--print-ink);
+  background:repeating-linear-gradient(90deg,rgba(50,37,43,.022) 0 1px,transparent 1px 4px),var(--print-paper);
+  box-shadow:4px 5px 0 rgba(0,0,0,.20);
+  transform:rotate(-1.2deg);
+}
+.archive-caption {color:#aba3c6;}
+.archive-col h3 {
+  color:#eae5f9;
+  border-bottom:3px double rgba(211,201,240,.28);
+  padding-bottom:18px;
+}
+.archive-item {border-bottom-color:rgba(206,195,240,.15);}
+.archive-item:hover {background:rgba(146,110,228,.055);}
+.archive-item>span {font-variant-numeric:tabular-nums;color:#bba1f7;}
+
+/* Typographic polish and smooth but quiet interactions. */
+.underlink,.secondary-action,.nav-contact {transition:color .25s ease,border-color .25s ease,background-color .25s ease,transform .32s cubic-bezier(.2,.8,.2,1);}
+.work-visual img {transition:opacity .4s ease,transform .85s cubic-bezier(.2,.8,.2,1),filter .55s ease;}
+.ticker {border-block-color:rgba(162,134,229,.4);}
+.contact-section h2 em {color:#b997ff;}
+
+/* Paper accents never block reading on small screens. */
+@media(max-width:920px) {
+  .writing-entry:hover {box-shadow:none;}
+  .archive-issue {transform:rotate(-.5deg);}
+}
+@media(max-width:620px) {
+  .hero,.intro-section,.work-section,.feature-section,.editorial-break,
+  .writing-section,.archive-section,.about-section,.contact-section {
+    background-size:54px 54px,54px 54px,auto,auto;
+  }
+  .hero-art .art-top span:last-child {padding:5px 7px;transform:none;}
+  .writing-feature .writing-type {font-size:9px;transform:none;padding:7px 9px;}
+  .archive-issue {transform:none;}
+  .visual-fig {font-size:9px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .writing-entry,.writing-entry:hover,.work-row,.preview-inner,.work-visual img {transition:none;}
+}
+
+/* Case studies share the same dark press-room atmosphere. */
+.case-page {background:#05060a;}
+.study-hero {
+  background-color:#05060a;
+  background-image:
+    linear-gradient(to right,rgba(168,144,230,.036) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(168,144,230,.031) 1px,transparent 1px),
+    radial-gradient(ellipse at 78% 26%,rgba(117,70,230,.135),transparent 62%),
+    radial-gradient(ellipse at 8% 87%,rgba(55,81,191,.065),transparent 70%);
+  background-size:72px 72px,72px 72px,auto,auto;
+}
+.study-next {background:radial-gradient(ellipse at 85% 38%,rgba(107,73,233,.12),transparent 65%),#080911;}
+@media(max-width:620px){.study-hero{background-size:54px 54px,54px 54px,auto,auto}}

@@ -1,6 +1,6 @@
 # Harkeerat Singh
 
-**Website:** https://iharkeerat.github.io/harkeerat-singh/ · [Academic CV](https://iharkeerat.github.io/harkeerat-singh/cv.html)
+**Website:** https://iharkeerat.github.io/harkeerat-singh/ · [Academic CV](https://iharkeerat.github.io/harkeerat-singh/assets/docs/Harkeerat_Singh_Detailed_CV.pdf)
 
 **Student researcher · Causal reasoning · Trustworthy AI · Computational modelling · Reproducible research software**
 

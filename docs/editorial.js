@@ -6,14 +6,14 @@
   const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
   const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const coarse=window.matchMedia('(pointer: coarse)').matches;
-  const menu=$('.menu-toggle'),mobile=$('#mobile-nav'),header=$('#site-header'),progress=$('#scroll-progress'),toggle=$('.motion-toggle');
+  const menu=$('.menu-toggle'),mobile=$('#mobile-nav'),header=$('#site-header'),progress=$('#scroll-progress'),toggle=$('.motion-toggle'),hero=$('.hero');
   let paused=reduceMotion,scrollBusy=false;
   function closeMenu(){if(!menu||!mobile)return;mobile.hidden=true;menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')}
   menu?.addEventListener('click',()=>{const opening=mobile.hidden;mobile.hidden=!opening;menu.setAttribute('aria-expanded',String(opening));menu.setAttribute('aria-label',opening?'Close navigation':'Open navigation')});
   $$('.mobile-nav a').forEach(a=>a.addEventListener('click',closeMenu));
   window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
   window.addEventListener('resize',()=>{if(innerWidth>920)closeMenu()});
-  function syncScroll(){scrollBusy=false;header?.classList.toggle('is-scrolled',scrollY>20);if(progress){const range=Math.max(1,document.documentElement.scrollHeight-innerHeight);progress.style.transform=`scaleX(${Math.min(1,Math.max(0,scrollY/range))})`}}
+  function syncScroll(){scrollBusy=false;header?.classList.toggle('is-scrolled',scrollY>20);if(progress){const range=Math.max(1,document.documentElement.scrollHeight-innerHeight);progress.style.transform=`scaleX(${Math.min(1,Math.max(0,scrollY/range))})`}if(hero){const span=Math.max(220,hero.offsetHeight*.93);const remaining=1-Math.min(1,Math.max(0,scrollY/span));hero.style.setProperty('--hero-grid-opacity',(paused || reduceMotion ? 0.18 : 0.58 * remaining).toFixed(3))}}
   function onScroll(){if(scrollBusy)return;scrollBusy=true;requestAnimationFrame(syncScroll)}
   window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);syncScroll();
   const reveals=$$('.reveal');
@@ -24,6 +24,8 @@
   function pauseMotion(next){paused=next;root.classList.toggle('motion-paused',next);if(next){reveals.forEach(el=>el.classList.add('is-visible'))}if(toggle){toggle.setAttribute('aria-pressed',String(next));$('.motion-icon',toggle).textContent=next?'▶':'Ⅱ';$('.motion-text',toggle).textContent=next?'Resume motion':'Pause motion'}}
   toggle?.addEventListener('click',()=>pauseMotion(!paused));
   if(reduceMotion)pauseMotion(true);
+  // Keep the square grid still when motion is paused, and re-sync when resumed.
+  toggle?.addEventListener('click',syncScroll);
   // The cursor augments only fine-pointer navigation; keyboard and touch retain their native controls.
   if(!reduceMotion&&!coarse&&window.matchMedia('(hover: hover)').matches){
     const c=$('.cursor'),label=$('.cursor-caption');

@@ -13,7 +13,7 @@
   $$('.mobile-nav a').forEach(a=>a.addEventListener('click',closeMenu));
   window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
   window.addEventListener('resize',()=>{if(innerWidth>920)closeMenu()});
-  function syncScroll(){scrollBusy=false;header?.classList.toggle('is-scrolled',scrollY>20);if(progress){const range=Math.max(1,document.documentElement.scrollHeight-innerHeight);progress.style.transform=`scaleX(${Math.min(1,Math.max(0,scrollY/range))})`}if(hero){const span=Math.max(220,hero.offsetHeight*.93);const remaining=1-Math.min(1,Math.max(0,scrollY/span));hero.style.setProperty('--hero-grid-opacity',(paused||reduceMotion?.18:.58*remaining).toFixed(3))}}
+  function syncScroll(){scrollBusy=false;header?.classList.toggle('is-scrolled',scrollY>20);if(progress){const range=Math.max(1,document.documentElement.scrollHeight-innerHeight);progress.style.transform=`scaleX(${Math.min(1,Math.max(0,scrollY/range))})`}if(hero){const span=Math.max(220,hero.offsetHeight*.93);const remaining=1-Math.min(1,Math.max(0,scrollY/span));hero.style.setProperty('--hero-grid-opacity',(paused || reduceMotion ? 0.18 : 0.58 * remaining).toFixed(3))}}
   function onScroll(){if(scrollBusy)return;scrollBusy=true;requestAnimationFrame(syncScroll)}
   window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);syncScroll();
   const reveals=$$('.reveal');

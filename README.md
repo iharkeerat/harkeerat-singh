@@ -1,5 +1,7 @@
 # Harkeerat Singh
 
+**Website:** https://iharkeerat.github.io/harkeerat-singh/ · [Academic CV](https://iharkeerat.github.io/harkeerat-singh/cv.html)
+
 **Student researcher · Causal reasoning · Trustworthy AI · Computational modelling · Reproducible research software**
 
 I work on a recurring question: **what can a system reasonably conclude from limited, imperfect or potentially misleading evidence?** My interests connect reinforcement learning, formal methods, educational technology, computational musicology and public-record interpretation.

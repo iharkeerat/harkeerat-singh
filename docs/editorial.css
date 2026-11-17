@@ -343,7 +343,7 @@ html.motion-paused .news-tape-track{animation-play-state:paused!important}
 .hero-portrait{
   align-self:center;
   justify-self:center;
-  width:min(100%,450px,calc((100svh - var(--header-height) - var(--edition-bar-height) - 150px) * .76));
+  width:min(100%,450px,calc(75svh - 210px));
 }
 .hero-bottom-note{margin-top:0;align-self:end}
 .work{
@@ -360,7 +360,7 @@ html.motion-paused .news-tape-track{animation-play-state:paused!important}
   .hero-intro{font-size:clamp(17px,2svh + 5px,21px);line-height:1.18;margin-bottom:9px}
   .hero-support{font-size:12px;line-height:1.4}
   .hero .hero-actions{margin-top:11px}
-  .hero-portrait{width:min(100%,410px,calc((100svh - var(--header-height) - var(--edition-bar-height) - 90px) * .77))}
+  .hero-portrait{width:min(100%,410px,calc(78svh - 200px))}
   .photo-caption{padding:8px 0 7px}
   .hero-bottom-note{font-size:8px}
 }

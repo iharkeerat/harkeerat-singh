@@ -24,13 +24,13 @@ An experimental workbench for symbolic music and formal syllable-to-note alignme
 - **Inspect:** [two-minute reviewer guide](https://github.com/iharkeerat/maqam-ai/blob/main/docs/REVIEWER_GUIDE.md) · [running the demo](https://github.com/iharkeerat/maqam-ai/blob/main/docs/GETTING_STARTED.md) · [results and limitations](https://github.com/iharkeerat/maqam-ai/blob/main/docs/RESULTS_AND_LIMITATIONS.md)
 - **Evidence status:** formal algorithms and constructed-example tests are inspectable. Real-world lyric-alignment accuracy has **not** been independently established.
 
-### 3. [M-Print — Adaptive Assessment Prototype](https://github.com/iharkeerat/mprint-cognitive-engine)
-**Python · FastAPI · Neo4j · SQLite · Learning analytics**
+### 3. [M-Print — Offline-First Adaptive Learning Diagnostics](https://github.com/iharkeerat/mprint-learning-diagnostics)
+**Python · FastAPI · SQLAlchemy · SQLite · Synthetic evaluation · Learning analytics**
 
-Explores response logging, accuracy-based question routing, prerequisite-graph queries and heuristic response-label summaries.
+An offline-first assessment application and separate synthetic research sandbox for item-level response evidence, adaptive question selection and prerequisite-aware practice paths.
 
-- **Inspect:** [repository](https://github.com/iharkeerat/mprint-cognitive-engine) · [research scope](https://github.com/iharkeerat/mprint-cognitive-engine/blob/main/docs/RESEARCH_SCOPE.md) · [setup notes](https://github.com/iharkeerat/mprint-cognitive-engine/blob/main/docs/REPRODUCIBILITY.md)
-- **Evidence status:** software prototype; response labels are not validated cognitive diagnoses, and the application is not production-ready.
+- **Inspect:** [repository](https://github.com/iharkeerat/mprint-learning-diagnostics) · [research scope](https://github.com/iharkeerat/mprint-learning-diagnostics/blob/main/docs/RESEARCH_SCOPE.md) · [setup notes](https://github.com/iharkeerat/mprint-learning-diagnostics/blob/main/docs/REPRODUCIBILITY.md)
+- **Evidence status:** software prototype; the synthetic benchmarks are not learner outcomes, and no human-participant or psychometric validation is claimed.
 
 ### 4. [Evidence Boundaries in Public Examination Reporting](https://github.com/iharkeerat/evidence-boundaries-research)
 **Documentary research · Source provenance · Claim verification · Public administration**

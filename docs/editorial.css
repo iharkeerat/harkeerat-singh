@@ -381,3 +381,67 @@ html.motion-paused .news-tape-track{animation-play-state:paused!important}
   .hero::before{opacity:.18!important;will-change:auto}
   .hero::after{opacity:.45!important}
 }
+
+
+/* ISSUE 01 / Softer ink-bleed lighting.
+   Broad isolated radials replace clipped section backgrounds. Each falloff
+   reaches full transparency before its box boundary, so no rectangle shows. */
+.work,.writing{
+  position:relative;
+  isolation:isolate;
+  background-image:none;
+}
+.work::before,.writing::before,.work::after,.writing::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+  border-radius:50%;
+  background-repeat:no-repeat;
+  filter:blur(42px);
+}
+.work > *,.writing > *{position:relative;z-index:1}
+.work::before{
+  width:min(72vw,860px);height:min(59vw,650px);
+  right:-19%;top:-1%;
+  background:radial-gradient(ellipse at 50% 50%,
+    rgba(173,50,43,.27) 0%,
+    rgba(172,55,50,.14) 34%,
+    rgba(173,55,51,.055) 55%,
+    transparent 76%);
+}
+.work::after{
+  width:min(50vw,610px);height:min(35vw,430px);
+  left:-22%;bottom:0%;opacity:.7;
+  background:radial-gradient(ellipse at center,
+    rgba(157,51,50,.16) 0%,
+    rgba(169,70,59,.065) 43%,
+    transparent 76%);
+}
+.writing::before{
+  width:min(74vw,920px);height:min(60vw,710px);
+  left:-21%;top:-10%;
+  background:radial-gradient(ellipse at 45% 52%,
+    rgba(172,56,48,.24) 0%,
+    rgba(169,57,52,.12) 34%,
+    rgba(172,57,52,.045) 57%,
+    transparent 76%);
+}
+.writing::after{
+  width:min(50vw,610px);height:min(38vw,470px);
+  right:-20%;bottom:7%;opacity:.6;
+  background:radial-gradient(ellipse at center,
+    rgba(162,60,56,.15) 0%,
+    rgba(162,60,56,.06) 40%,
+    transparent 76%);
+}
+@media(max-width:730px){
+  .work::before,.writing::before{
+    width:105vw;height:72vw;filter:blur(34px)
+  }
+  .work::before{right:-36%;top:3%}
+  .writing::before{left:-33%;top:2%}
+  .work::after,.writing::after{
+    width:83vw;height:56vw;filter:blur(34px)
+  }
+}

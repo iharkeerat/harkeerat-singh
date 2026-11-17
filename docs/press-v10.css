@@ -290,3 +290,13 @@ html,body {background:#05060a;}
  .case-section{padding-block:29px 34px}
  .study-next{padding-block:38px 50px}
 }
+
+
+/* V13 — research interests index: compact, editorial and responsive. */
+.research-interest-panel{margin-top:clamp(36px,5vw,68px);padding-top:23px;border-top:1px solid var(--rule-strong)}
+.interest-heading{display:flex;justify-content:space-between;gap:18px;margin-bottom:10px;color:#b7a6e4;font:500 10px/1.5 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+.research-interest-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,5vw,78px);margin:0;padding:0;list-style:none}
+.research-interest-list li{position:relative;padding:13px 0 14px 17px;border-bottom:1px solid var(--rule);color:var(--faint);font:400 13px/1.55 var(--sans)}
+.research-interest-list li::before{content:"—";position:absolute;left:0;top:13px;color:var(--violet)}
+@media(max-width:620px){.interest-heading{display:grid;gap:4px}.research-interest-list{grid-template-columns:1fr}.research-interest-list li{padding-block:11px}.research-interest-list li::before{top:11px}}
+@media(prefers-reduced-motion:reduce){.research-interest-list li{transition:none}}

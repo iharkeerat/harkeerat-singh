@@ -8,7 +8,7 @@ I study how agents and researchers can draw defensible conclusions from incomple
 
 - **[Reality Attribution](https://github.com/iharkeerat/reality-attribution)** — Causal distinguishability and active diagnosis in reinforcement learning. Deterministic GridWorld evidence is publicly verifiable; the full simulator and definitive LunarLander results are not yet released.
 - **[MAQAM AI](https://github.com/iharkeerat/maqam-ai)** — Formal symbolic-music alignment research prototype with exact dynamic programming, a runnable constructed-example demo and automated tests. Independent musical accuracy remains unestablished.
-- **[M-Print](https://github.com/iharkeerat/mprint-cognitive-engine)** — Exploratory adaptive-assessment software using FastAPI, Neo4j and SQLite. Not a validated cognitive diagnostic.
+- **[M-Print](https://github.com/iharkeerat/mprint-learning-diagnostics)** — Exploratory adaptive-assessment software using FastAPI, Neo4j and SQLite. Not a validated cognitive diagnostic.
 - **[Evidence Boundaries](https://github.com/iharkeerat/evidence-boundaries-research)** — Author-led, AI-assisted documentary analysis of official examination notices and reported outcomes, with source registers and explicit methodological limitations.
 
 **[Browse the full portfolio](https://github.com/iharkeerat/harkeerat-singh)**
